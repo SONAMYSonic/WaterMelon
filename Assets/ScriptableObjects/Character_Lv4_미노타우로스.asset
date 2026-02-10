@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca20bd2a1a4eb314fb39aea7587b7af2, type: 3}
+  m_Name: "Character_Lv4_\uBBF8\uB178\uD0C0\uC6B0\uB85C\uC2A4"
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData
+  characterName: Minotaur
+  level: 4
+  characterSprite: {fileID: -1088042601980007817, guid: b5a421007026626488395ca45d6afa69, type: 3}
+  radius: 0.56
+  mergeScore: 15
+  mergeSound: {fileID: 0}
+  voiceClip: {fileID: 0}
+  mergeEffectColor: {r: 1, g: 0, b: 0, a: 1}

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__unityMCP__manage_gameobject",
+      "mcp__unityMCP__execute_menu_item",
+      "mcp__unityMCP__find_gameobjects",
+      "mcp__unityMCP__manage_prefabs"
+    ]
+  }
+}
