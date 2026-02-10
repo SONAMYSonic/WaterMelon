@@ -1,0 +1,2823 @@
+fileFormatVersion: 2
+guid: 871ac8d9c1cc4d84f8ce0e0a93472e37
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9002634748789349490
+    second: fes_parts_0
+  - first:
+      213: -4100589122683138089
+    second: fes_parts_1
+  - first:
+      213: 4593623256545810986
+    second: fes_parts_2
+  - first:
+      213: 223852270836884132
+    second: fes_parts_3
+  - first:
+      213: 3281434696173677856
+    second: fes_parts_4
+  - first:
+      213: -6924493317204295219
+    second: fes_parts_5
+  - first:
+      213: 4407087444946608412
+    second: fes_parts_6
+  - first:
+      213: 8537994869694555991
+    second: fes_parts_7
+  - first:
+      213: -6637894093982951648
+    second: fes_parts_8
+  - first:
+      213: -8922531001652027856
+    second: fes_parts_9
+  - first:
+      213: -6031227728527340554
+    second: fes_parts_10
+  - first:
+      213: 7680137551550694469
+    second: fes_parts_11
+  - first:
+      213: 1488563396534652201
+    second: fes_parts_12
+  - first:
+      213: -5268162850245824539
+    second: fes_parts_13
+  - first:
+      213: -35849624747352499
+    second: fes_parts_14
+  - first:
+      213: 2376370472991769225
+    second: fes_parts_15
+  - first:
+      213: 3699450975716786949
+    second: fes_parts_16
+  - first:
+      213: 4873292634578772448
+    second: fes_parts_17
+  - first:
+      213: 2259650099336285637
+    second: fes_parts_18
+  - first:
+      213: -1465465934241870185
+    second: fes_parts_19
+  - first:
+      213: -744290255489280441
+    second: fes_parts_20
+  - first:
+      213: -576435688629232986
+    second: fes_parts_21
+  - first:
+      213: -4872156185567602217
+    second: fes_parts_22
+  - first:
+      213: -1265247097796523350
+    second: fes_parts_23
+  - first:
+      213: 5641062089976438865
+    second: fes_parts_24
+  - first:
+      213: -3310252127056685998
+    second: fes_parts_25
+  - first:
+      213: 6161359009391845120
+    second: fes_parts_26
+  - first:
+      213: 4911031030420935637
+    second: fes_parts_27
+  - first:
+      213: -2594410412113125416
+    second: fes_parts_28
+  - first:
+      213: 4064961415664508398
+    second: fes_parts_29
+  - first:
+      213: -497465486739693533
+    second: fes_parts_30
+  - first:
+      213: -8373932138338225581
+    second: fes_parts_31
+  - first:
+      213: -2275040983182684615
+    second: fes_parts_32
+  - first:
+      213: -233997597314401031
+    second: fes_parts_33
+  - first:
+      213: -4145403598198293930
+    second: fes_parts_34
+  - first:
+      213: -1987094954437708916
+    second: fes_parts_35
+  - first:
+      213: 1835847644228576759
+    second: fes_parts_36
+  - first:
+      213: 1548923934302034547
+    second: fes_parts_37
+  - first:
+      213: 6633278200944690924
+    second: fes_parts_38
+  - first:
+      213: -8841794260920019745
+    second: fes_parts_39
+  - first:
+      213: 5612287027858502764
+    second: fes_parts_40
+  - first:
+      213: -2452518116672732539
+    second: fes_parts_41
+  - first:
+      213: -5989909524091220756
+    second: fes_parts_42
+  - first:
+      213: 3902560170765060560
+    second: fes_parts_43
+  - first:
+      213: 727755838743857203
+    second: fes_parts_44
+  - first:
+      213: 3690208393780263570
+    second: fes_parts_45
+  - first:
+      213: -311439833618424058
+    second: fes_parts_46
+  - first:
+      213: 524763362536578852
+    second: fes_parts_47
+  - first:
+      213: 1306667879901283531
+    second: fes_parts_48
+  - first:
+      213: 1261135330754633083
+    second: fes_parts_49
+  - first:
+      213: -4176014185588305057
+    second: fes_parts_50
+  - first:
+      213: -1187992276166541951
+    second: fes_parts_51
+  - first:
+      213: 4379985138240864371
+    second: fes_parts_52
+  - first:
+      213: -7107304968270167381
+    second: fes_parts_53
+  - first:
+      213: -3305123229723119453
+    second: fes_parts_54
+  - first:
+      213: -6346806737912050214
+    second: fes_parts_55
+  - first:
+      213: 5229159478797512591
+    second: fes_parts_56
+  - first:
+      213: 3467330903865007260
+    second: fes_parts_57
+  - first:
+      213: -6542662877594793863
+    second: fes_parts_58
+  - first:
+      213: 1143328522304170027
+    second: fes_parts_59
+  - first:
+      213: -5258358530864536906
+    second: fes_parts_60
+  - first:
+      213: 3161731038543577896
+    second: fes_parts_61
+  - first:
+      213: 2980475296927414035
+    second: fes_parts_62
+  - first:
+      213: 3216899750044890955
+    second: fes_parts_63
+  - first:
+      213: -2749625626760238057
+    second: fes_parts_64
+  - first:
+      213: -502478685708649334
+    second: fes_parts_65
+  - first:
+      213: 3657515119629483280
+    second: fes_parts_66
+  - first:
+      213: -2839380497810749898
+    second: fes_parts_67
+  - first:
+      213: -1162229188448664469
+    second: fes_parts_68
+  - first:
+      213: -6452048618438962829
+    second: fes_parts_69
+  - first:
+      213: 7184530802376977666
+    second: fes_parts_70
+  - first:
+      213: -7200135683120475735
+    second: fes_parts_71
+  - first:
+      213: 4583118013008212870
+    second: fes_parts_72
+  - first:
+      213: 1242296133822012319
+    second: fes_parts_73
+  - first:
+      213: 4001234076419769655
+    second: fes_parts_74
+  - first:
+      213: -7125154772425499341
+    second: fes_parts_75
+  - first:
+      213: 7748868482787355027
+    second: fes_parts_76
+  - first:
+      213: 755519611458256535
+    second: fes_parts_77
+  - first:
+      213: -2894272130868922105
+    second: fes_parts_78
+  - first:
+      213: 8597816101154274316
+    second: fes_parts_79
+  - first:
+      213: 3160313446829843450
+    second: fes_parts_80
+  - first:
+      213: 5714329631939970018
+    second: fes_parts_81
+  - first:
+      213: -5333599238711025912
+    second: fes_parts_82
+  - first:
+      213: 72942150455493031
+    second: fes_parts_83
+  - first:
+      213: 6852193039706298982
+    second: fes_parts_84
+  - first:
+      213: -10493047507633493
+    second: fes_parts_85
+  - first:
+      213: 619946590689718249
+    second: fes_parts_86
+  - first:
+      213: -8779832137736860680
+    second: fes_parts_87
+  - first:
+      213: -3147938431300545976
+    second: fes_parts_88
+  - first:
+      213: 6246791124836951305
+    second: fes_parts_89
+  - first:
+      213: 6765963151529821145
+    second: fes_parts_90
+  - first:
+      213: 4636669766609613155
+    second: fes_parts_91
+  - first:
+      213: 3425072446618832728
+    second: fes_parts_92
+  - first:
+      213: -1427153104761488224
+    second: fes_parts_93
+  - first:
+      213: 2546317415135404995
+    second: fes_parts_94
+  - first:
+      213: 6237198354525901121
+    second: fes_parts_95
+  - first:
+      213: 9073596860240285461
+    second: fes_parts_96
+  - first:
+      213: 1407241959036806370
+    second: fes_parts_97
+  - first:
+      213: -8958283877519390313
+    second: fes_parts_98
+  - first:
+      213: 2170041570472360471
+    second: fes_parts_99
+  - first:
+      213: 2900437802434900211
+    second: fes_parts_100
+  - first:
+      213: 7672046722866365268
+    second: fes_parts_101
+  - first:
+      213: 7536908990319226350
+    second: fes_parts_102
+  - first:
+      213: 9160481972302051052
+    second: fes_parts_103
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fes_parts_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1285
+        width: 1138
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e83a2dbd467301380800000000000000
+      internalID: -9002634748789349490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_1
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 1361
+        width: 299
+        height: 436
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df04a43be7c717c0800000000000000
+      internalID: -4100589122683138089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_2
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 1501
+        width: 294
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2ad2668304dfbf30800000000000000
+      internalID: 4593623256545810986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_3
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 1741
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a2a56d44784b1300800000000000000
+      internalID: 223852270836884132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_4
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 1686
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02de21b687ff98d20800000000000000
+      internalID: 3281434696173677856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_5
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 1633
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1c87af30247ef90800000000000000
+      internalID: -6924493317204295219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_6
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 1581
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1160227eae192d30800000000000000
+      internalID: 4407087444946608412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_7
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 1543
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7576046091d0d7670800000000000000
+      internalID: 8537994869694555991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1170
+        width: 809
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0279b779d7671e3a0800000000000000
+      internalID: -6637894093982951648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_9
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1110
+        width: 349
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03ede1dd35dcc2480800000000000000
+      internalID: -8922531001652027856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_10
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 1065
+        width: 293
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fb44a1f556cc4ca0800000000000000
+      internalID: -6031227728527340554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_11
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 1201
+        width: 296
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 544415a7964559a60800000000000000
+      internalID: 7680137551550694469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1038
+        width: 809
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92dc81cb58078a410800000000000000
+      internalID: 1488563396534652201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_13
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 941
+        width: 258
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef2034bcc9b3e6b0800000000000000
+      internalID: -5268162850245824539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_14
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 1160
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4e5a9bc4f2a08ff0800000000000000
+      internalID: -35849624747352499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_15
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1038
+        width: 761
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 982c669ca509af020800000000000000
+      internalID: 2376370472991769225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_16
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1090
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5034297df07175330800000000000000
+      internalID: 3699450975716786949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_17
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1056
+        width: 330
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e16892d4d961a340800000000000000
+      internalID: 4873292634578772448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_18
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1079
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cd8d9f0bc3eb5f10800000000000000
+      internalID: 2259650099336285637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_19
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1076
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ec3174f7e99abe0800000000000000
+      internalID: -1465465934241870185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_20
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1061
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 746d6cfb4ffbba5f0800000000000000
+      internalID: -744290255489280441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_21
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1052
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aa95679bc61008f0800000000000000
+      internalID: -576435688629232986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_22
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 1010
+        width: 202
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d9550553cf926cb0800000000000000
+      internalID: -4872156185567602217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_23
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 1005
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa8eb6d770f07ee0800000000000000
+      internalID: -1265247097796523350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_24
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 1046
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 150e7fc4514194e40800000000000000
+      internalID: 5641062089976438865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 394
+        width: 182
+        height: 642
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2541ec99a3f9f02d0800000000000000
+      internalID: -3310252127056685998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_26
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 394
+        width: 4
+        height: 642
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f1470ff5b818550800000000000000
+      internalID: 6161359009391845120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_27
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 964
+        width: 659
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d31921d3bc772440800000000000000
+      internalID: 4911031030420935637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_28
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1002
+        width: 330
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df1c68d97dcefbd0800000000000000
+      internalID: -2594410412113125416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_29
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 867
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed1a56ded4a96830800000000000000
+      internalID: 4064961415664508398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_30
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 968
+        width: 372
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3202dd686c5a819f0800000000000000
+      internalID: -497465486739693533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_31
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 925
+        width: 809
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3527f115611d9cb80800000000000000
+      internalID: -8373932138338225581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_32
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 611
+        width: 522
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ec0fb874e6d60e0800000000000000
+      internalID: -2275040983182684615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_33
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 906
+        width: 372
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fcb7cdcc6ca0ccf0800000000000000
+      internalID: -233997597314401031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 906
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ab3c604619876c0800000000000000
+      internalID: -4145403598198293930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_35
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 777
+        width: 498
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c83f4c1caab6c64e0800000000000000
+      internalID: -1987094954437708916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_36
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 595
+        width: 292
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f56bf7a4bd3a7910800000000000000
+      internalID: 1835847644228576759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_37
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 867
+        width: 303
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a5c289c12ee7510800000000000000
+      internalID: 1548923934302034547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_38
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 785
+        width: 123
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce686af01632e0c50800000000000000
+      internalID: 6633278200944690924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_39
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 729
+        width: 194
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd456cc27f2ab4580800000000000000
+      internalID: -8841794260920019745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_40
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 764
+        width: 210
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c64f9011159d2ed40800000000000000
+      internalID: 5612287027858502764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_41
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 814
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 582038254c7e6fdd0800000000000000
+      internalID: -2452518116672732539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_42
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 659
+        width: 496
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec40d316019fdca0800000000000000
+      internalID: -5989909524091220756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_43
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 768
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d90a057ccda82630800000000000000
+      internalID: 3902560170765060560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_44
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 665
+        width: 206
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3384b8b5412891a00800000000000000
+      internalID: 727755838743857203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_45
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 604
+        width: 160
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29aff6a8bf0463330800000000000000
+      internalID: 3690208393780263570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_46
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 633
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60f54441f1b8dabf0800000000000000
+      internalID: -311439833618424058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_47
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 481
+        width: 410
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42fd1277f75584700800000000000000
+      internalID: 524763362536578852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_48
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 596
+        width: 77
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc4cde48387322210800000000000000
+      internalID: 1306667879901283531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_49
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 611
+        width: 202
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d135bc6e3708110800000000000000
+      internalID: 1261135330754633083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_50
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 508
+        width: 108
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5354034931db06c0800000000000000
+      internalID: -4176014185588305057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_51
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 535
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d7f2fa157638fe0800000000000000
+      internalID: -1187992276166541951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_52
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 237
+        width: 213
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 370465ee645d8cc30800000000000000
+      internalID: 4379985138240864371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_53
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 237
+        width: 211
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba243e799c7cd5d90800000000000000
+      internalID: -7107304968270167381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_54
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 253
+        width: 213
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a036711fe7d122d0800000000000000
+      internalID: -3305123229723119453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_55
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 444
+        width: 160
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add42b016ec9be7a0800000000000000
+      internalID: -6346806737912050214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_56
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 470
+        width: 132
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8fa79737d4b19840800000000000000
+      internalID: 5229159478797512591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_57
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 513
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c9b9b161f6e1030800000000000000
+      internalID: 3467330903865007260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_58
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 516
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 978c3dff6cac335a0800000000000000
+      internalID: -6542662877594793863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_59
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 485
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b282381cb3beddf00800000000000000
+      internalID: 1143328522304170027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_60
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 386
+        width: 126
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b2ac22b6ce8607b0800000000000000
+      internalID: -5258358530864536906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_61
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 457
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82387b3c0a9b0eb20800000000000000
+      internalID: 3161731038543577896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_62
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 181
+        width: 292
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3177f27cd76cc5920800000000000000
+      internalID: 2980475296927414035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_63
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 123
+        width: 213
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b47f77f5749b4ac20800000000000000
+      internalID: 3216899750044890955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_64
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 336
+        width: 132
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71c25a38f0e57d9d0800000000000000
+      internalID: -2749625626760238057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 35
+        width: 212
+        height: 357
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c712f2c46d609f0800000000000000
+      internalID: -502478685708649334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_66
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 284
+        width: 160
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01db22a7f9a12c230800000000000000
+      internalID: 3657515119629483280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_67
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 203
+        width: 132
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63681dd1b7e7898d0800000000000000
+      internalID: -2839380497810749898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_68
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 299
+        width: 97
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b644deaf5beeedfe0800000000000000
+      internalID: -1162229188448664469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_69
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 169
+        width: 486
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371556847f7b576a0800000000000000
+      internalID: -6452048618438962829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_70
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 179
+        width: 150
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d288113b494b360800000000000000
+      internalID: 7184530802376977666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_71
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 150
+        width: 132
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a15df08ebaf31c90800000000000000
+      internalID: -7200135683120475735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_72
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 212
+        width: 79
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6837c09ec818a9f30800000000000000
+      internalID: 4583118013008212870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_73
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 96
+        width: 265
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b5d4270c58d3110800000000000000
+      internalID: 1242296133822012319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_74
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 155
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735403c613d378730800000000000000
+      internalID: 4001234076419769655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_75
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 136
+        width: 150
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d16e33c7d5e1d90800000000000000
+      internalID: -7125154772425499341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_76
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 129
+        width: 150
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 399a2cf64d2898b60800000000000000
+      internalID: 7748868482787355027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_77
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 169
+        width: 110
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79e7fcd65152c7a00800000000000000
+      internalID: 755519611458256535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_78
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 94
+        width: 408
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709be3cd4da75d7d0800000000000000
+      internalID: -2894272130868922105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_79
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 94
+        width: 150
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c3f69d034915770800000000000000
+      internalID: 8597816101154274316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_80
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 100
+        width: 55
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af3ee29f550bbdb20800000000000000
+      internalID: 3160313446829843450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_81
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 16
+        width: 132
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e3454146806d4f40800000000000000
+      internalID: 5714329631939970018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_82
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 7
+        width: 123
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80fd55240cf3bf5b0800000000000000
+      internalID: -5333599238711025912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_83
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 126
+        width: 89
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a18d07df74230100800000000000000
+      internalID: 72942150455493031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_84
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 49
+        width: 150
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66a1910e341e71f50800000000000000
+      internalID: 6852193039706298982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_85
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 94
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa32bef0a8badff0800000000000000
+      internalID: -10493047507633493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_86
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 103
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef66cdb32e7a9800800000000000000
+      internalID: 619946590689718249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_87
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 102
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fbc2a23035c72680800000000000000
+      internalID: -8779832137736860680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_88
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 41
+        width: 330
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 842d78bdca64054d0800000000000000
+      internalID: -3147938431300545976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_89
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 50
+        width: 188
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90528fd5e6f01b650800000000000000
+      internalID: 6246791124836951305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_90
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 35
+        width: 162
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d3415283a785ed50800000000000000
+      internalID: 6765963151529821145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_91
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 15
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3613f8b2692c85040800000000000000
+      internalID: 4636669766609613155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_92
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 36
+        width: 143
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85f81be4e3d488f20800000000000000
+      internalID: 3425072446618832728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_93
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 65
+        width: 53
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac789600dbb13ce0800000000000000
+      internalID: -1427153104761488224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_94
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 190
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c36986b236565320800000000000000
+      internalID: 2546317415135404995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_95
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 0
+        width: 190
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 141da2b7bdafe8650800000000000000
+      internalID: 6237198354525901121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_96
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 0
+        width: 150
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51fc8b93544ebed70800000000000000
+      internalID: 9073596860240285461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_97
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 19
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4e9691b17878310800000000000000
+      internalID: 1407241959036806370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_98
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 18
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7990953c648cda380800000000000000
+      internalID: -8958283877519390313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_99
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 9
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71af5db9f498d1e10800000000000000
+      internalID: 2170041570472360471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_100
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 4
+        width: 150
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f03f3b60dc604820800000000000000
+      internalID: 2900437802434900211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_101
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 6
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45346a0a8d5987a60800000000000000
+      internalID: 7672046722866365268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_102
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 0
+        width: 48
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eedec606bca789860800000000000000
+      internalID: 7536908990319226350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_parts_103
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 11
+        width: 97
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce6fe6ac1d1902f70800000000000000
+      internalID: 9160481972302051052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 017d81d2c00e4cc4cb986a9ef616fe9f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      fes_parts_0: -9002634748789349490
+      fes_parts_1: -4100589122683138089
+      fes_parts_10: -6031227728527340554
+      fes_parts_100: 2900437802434900211
+      fes_parts_101: 7672046722866365268
+      fes_parts_102: 7536908990319226350
+      fes_parts_103: 9160481972302051052
+      fes_parts_11: 7680137551550694469
+      fes_parts_12: 1488563396534652201
+      fes_parts_13: -5268162850245824539
+      fes_parts_14: -35849624747352499
+      fes_parts_15: 2376370472991769225
+      fes_parts_16: 3699450975716786949
+      fes_parts_17: 4873292634578772448
+      fes_parts_18: 2259650099336285637
+      fes_parts_19: -1465465934241870185
+      fes_parts_2: 4593623256545810986
+      fes_parts_20: -744290255489280441
+      fes_parts_21: -576435688629232986
+      fes_parts_22: -4872156185567602217
+      fes_parts_23: -1265247097796523350
+      fes_parts_24: 5641062089976438865
+      fes_parts_25: -3310252127056685998
+      fes_parts_26: 6161359009391845120
+      fes_parts_27: 4911031030420935637
+      fes_parts_28: -2594410412113125416
+      fes_parts_29: 4064961415664508398
+      fes_parts_3: 223852270836884132
+      fes_parts_30: -497465486739693533
+      fes_parts_31: -8373932138338225581
+      fes_parts_32: -2275040983182684615
+      fes_parts_33: -233997597314401031
+      fes_parts_34: -4145403598198293930
+      fes_parts_35: -1987094954437708916
+      fes_parts_36: 1835847644228576759
+      fes_parts_37: 1548923934302034547
+      fes_parts_38: 6633278200944690924
+      fes_parts_39: -8841794260920019745
+      fes_parts_4: 3281434696173677856
+      fes_parts_40: 5612287027858502764
+      fes_parts_41: -2452518116672732539
+      fes_parts_42: -5989909524091220756
+      fes_parts_43: 3902560170765060560
+      fes_parts_44: 727755838743857203
+      fes_parts_45: 3690208393780263570
+      fes_parts_46: -311439833618424058
+      fes_parts_47: 524763362536578852
+      fes_parts_48: 1306667879901283531
+      fes_parts_49: 1261135330754633083
+      fes_parts_5: -6924493317204295219
+      fes_parts_50: -4176014185588305057
+      fes_parts_51: -1187992276166541951
+      fes_parts_52: 4379985138240864371
+      fes_parts_53: -7107304968270167381
+      fes_parts_54: -3305123229723119453
+      fes_parts_55: -6346806737912050214
+      fes_parts_56: 5229159478797512591
+      fes_parts_57: 3467330903865007260
+      fes_parts_58: -6542662877594793863
+      fes_parts_59: 1143328522304170027
+      fes_parts_6: 4407087444946608412
+      fes_parts_60: -5258358530864536906
+      fes_parts_61: 3161731038543577896
+      fes_parts_62: 2980475296927414035
+      fes_parts_63: 3216899750044890955
+      fes_parts_64: -2749625626760238057
+      fes_parts_65: -502478685708649334
+      fes_parts_66: 3657515119629483280
+      fes_parts_67: -2839380497810749898
+      fes_parts_68: -1162229188448664469
+      fes_parts_69: -6452048618438962829
+      fes_parts_7: 8537994869694555991
+      fes_parts_70: 7184530802376977666
+      fes_parts_71: -7200135683120475735
+      fes_parts_72: 4583118013008212870
+      fes_parts_73: 1242296133822012319
+      fes_parts_74: 4001234076419769655
+      fes_parts_75: -7125154772425499341
+      fes_parts_76: 7748868482787355027
+      fes_parts_77: 755519611458256535
+      fes_parts_78: -2894272130868922105
+      fes_parts_79: 8597816101154274316
+      fes_parts_8: -6637894093982951648
+      fes_parts_80: 3160313446829843450
+      fes_parts_81: 5714329631939970018
+      fes_parts_82: -5333599238711025912
+      fes_parts_83: 72942150455493031
+      fes_parts_84: 6852193039706298982
+      fes_parts_85: -10493047507633493
+      fes_parts_86: 619946590689718249
+      fes_parts_87: -8779832137736860680
+      fes_parts_88: -3147938431300545976
+      fes_parts_89: 6246791124836951305
+      fes_parts_9: -8922531001652027856
+      fes_parts_90: 6765963151529821145
+      fes_parts_91: 4636669766609613155
+      fes_parts_92: 3425072446618832728
+      fes_parts_93: -1427153104761488224
+      fes_parts_94: 2546317415135404995
+      fes_parts_95: 6237198354525901121
+      fes_parts_96: 9073596860240285461
+      fes_parts_97: 1407241959036806370
+      fes_parts_98: -8958283877519390313
+      fes_parts_99: 2170041570472360471
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
