@@ -126,13 +126,13 @@ public class UIManager : MonoBehaviour
     private void UpdateScore(int score)
     {
         if (scoreText != null)
-            scoreText.text = $"SCORE\n{score:N0}";
+            scoreText.text = $"{score:N0}";
     }
 
     private void UpdateHighScore(int score)
     {
         if (highScoreText != null)
-            highScoreText.text = $"BEST\n{score:N0}";
+            highScoreText.text = $"{score:N0}";
     }
 
     private void UpdateNextCharacter(int level)

@@ -5,6 +5,7 @@ using UnityEngine;
 /// Inspector에서 backgroundSprite에 원하는 이미지를 넣으면 해당 이미지가 배경으로 사용됩니다.
 /// 비워두면 기존처럼 단색 배경이 적용됩니다.
 /// </summary>
+[ExecuteInEditMode]
 public class BackgroundSetup : MonoBehaviour
 {
     [Header("배경 설정")]

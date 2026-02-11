@@ -4,6 +4,7 @@ using UnityEngine;
 /// 수박게임 컨테이너(바닥 + 좌우 벽)를 자동 생성한다.
 /// FHD 기준 중앙 배치.
 /// </summary>
+[ExecuteInEditMode]
 public class ContainerSetup : MonoBehaviour
 {
     [Header("Container Dimensions (World Units)")]
@@ -17,6 +18,24 @@ public class ContainerSetup : MonoBehaviour
 
     private void Awake()
     {
+        RebuildWalls();
+    }
+
+    private void RebuildWalls()
+    {
+        // 기존 벽 제거 (중복 방지)
+        for (int i = transform.childCount - 1; i >= 0; i--)
+        {
+            var child = transform.GetChild(i);
+            if (child.name == "Floor" || child.name == "LeftWall" || child.name == "RightWall")
+            {
+                if (Application.isPlaying)
+                    Destroy(child.gameObject);
+                else
+                    DestroyImmediate(child.gameObject);
+            }
+        }
+
         CreateWall("Floor", new Vector3(0, -height / 2f, 0),
             new Vector2(width + wallThickness * 2, wallThickness));
         CreateWall("LeftWall", new Vector3(-width / 2f - wallThickness / 2f, 0, 0),
