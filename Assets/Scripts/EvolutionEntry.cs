@@ -10,7 +10,7 @@ public class EvolutionEntry : MonoBehaviour
     [SerializeField] private Image characterImage;
     [SerializeField] private TextMeshProUGUI levelText;
 
-    public void Setup(CharacterData data)
+    public void Setup(CharacterData data, int level)
     {
         if (characterImage != null)
         {
@@ -26,6 +26,6 @@ public class EvolutionEntry : MonoBehaviour
         }
 
         if (levelText != null)
-            levelText.text = $"Lv.{data.level}";
+            levelText.text = $"Lv.{level}";
     }
 }

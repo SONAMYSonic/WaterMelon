@@ -42,6 +42,7 @@ public class UIManager : MonoBehaviour
             GameManager.Instance.OnHighScoreChanged += UpdateHighScore;
             GameManager.Instance.OnNextCharacterChanged += UpdateNextCharacter;
             GameManager.Instance.OnGameOver += ShowGameOver;
+            GameManager.Instance.OnCharactersSelected += BuildEvolutionChart;
         }
 
         if (restartButton != null)
@@ -49,27 +50,30 @@ public class UIManager : MonoBehaviour
 
         UpdateScore(0);
         UpdateHighScore(PlayerPrefs.GetInt("HighScore", 0));
-        BuildEvolutionChart();
     }
 
     private void BuildEvolutionChart()
     {
         if (evolutionChartContent == null || characterDB == null) return;
 
+        // 기존 차트 행 제거 (재시작 시 중복 방지)
+        for (int i = evolutionChartContent.childCount - 1; i >= 0; i--)
+            Destroy(evolutionChartContent.GetChild(i).gameObject);
+
         for (int i = 0; i <= characterDB.MaxLevel; i++)
         {
             CharacterData data = characterDB.GetCharacter(i);
             if (data == null) continue;
-            CreateEvolutionRow(evolutionChartContent, data);
+            CreateEvolutionRow(evolutionChartContent, data, i);
         }
     }
 
-    private void CreateEvolutionRow(Transform parent, CharacterData data)
+    private void CreateEvolutionRow(Transform parent, CharacterData data, int level)
     {
         if (evolutionRowPrefab != null)
         {
             var row = Instantiate(evolutionRowPrefab, parent);
-            row.name = $"Evo_Lv{data.level}";
+            row.name = $"Evo_Lv{level}";
             var icon = row.transform.Find("Icon")?.GetComponent<Image>();
             if (icon != null)
             {
@@ -78,12 +82,12 @@ public class UIManager : MonoBehaviour
             }
             var lvl = row.transform.Find("Lvl")?.GetComponent<TextMeshProUGUI>();
             if (lvl != null)
-                lvl.text = $"Lv.{data.level}";
+                lvl.text = $"Lv.{level}";
             return;
         }
 
         // 프리팹이 없으면 기존 방식으로 코드 생성
-        var rowGo = new GameObject($"Evo_Lv{data.level}", typeof(RectTransform),
+        var rowGo = new GameObject($"Evo_Lv{level}", typeof(RectTransform),
             typeof(HorizontalLayoutGroup));
         rowGo.transform.SetParent(parent, false);
         rowGo.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 42);
@@ -106,7 +110,7 @@ public class UIManager : MonoBehaviour
         txtGo.transform.SetParent(rowGo.transform, false);
         txtGo.GetComponent<RectTransform>().sizeDelta = new Vector2(90, 36);
         var tmp = txtGo.GetComponent<TextMeshProUGUI>();
-        tmp.text = $"Lv.{data.level}";
+        tmp.text = $"Lv.{level}";
         tmp.fontSize = 16;
         tmp.color = Color.white;
         tmp.alignment = TextAlignmentOptions.Left;
@@ -153,6 +157,7 @@ public class UIManager : MonoBehaviour
             GameManager.Instance.OnHighScoreChanged -= UpdateHighScore;
             GameManager.Instance.OnNextCharacterChanged -= UpdateNextCharacter;
             GameManager.Instance.OnGameOver -= ShowGameOver;
+            GameManager.Instance.OnCharactersSelected -= BuildEvolutionChart;
         }
     }
 }

@@ -18,12 +18,12 @@ public class Character : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public void Initialize(CharacterData data)
+    public void Initialize(CharacterData data, int level, float radius)
     {
-        Level = data.level;
+        Level = level;
         spriteRenderer.sprite = data.characterSprite;
 
-        float diameter = data.radius * 2f;
+        float diameter = radius * 2f;
         // 스프라이트 크기에 맞게 스케일 조정
         if (data.characterSprite != null)
         {
@@ -36,7 +36,7 @@ public class Character : MonoBehaviour
             ? data.characterSprite.bounds.extents.x
             : 0.5f;
 
-        gameObject.name = $"Character_Lv{data.level}_{data.characterName}";
+        gameObject.name = $"Character_Lv{level}_{data.characterName}";
     }
 
     public void SetKinematic(bool isKinematic)

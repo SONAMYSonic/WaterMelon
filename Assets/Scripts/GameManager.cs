@@ -53,10 +53,17 @@ public class GameManager : MonoBehaviour
         HighScore = PlayerPrefs.GetInt("HighScore", 0);
     }
 
+    // 이벤트: 캐릭터 선택 완료 시 (UIManager가 구독)
+    public System.Action OnCharactersSelected;
+
     private void Start()
     {
         mouse = Mouse.current;
         touchscreen = Touchscreen.current;
+
+        // 28명 중 랜덤 11명 선택
+        characterDB.SelectRandomCharacters();
+        OnCharactersSelected?.Invoke();
 
         OnHighScoreChanged?.Invoke(HighScore);
         PrepareNextDrop();
@@ -127,7 +134,7 @@ public class GameManager : MonoBehaviour
         GameObject go = Instantiate(characterPrefab, dropPoint.position,
             Quaternion.identity, containerParent);
         currentCharacter = go.GetComponent<Character>();
-        currentCharacter.Initialize(data);
+        currentCharacter.Initialize(data, spawnLevel, characterDB.GetRadius(spawnLevel));
         currentCharacter.SetKinematic(true);
         go.layer = LayerMask.NameToLayer("Ignore Raycast");
 
@@ -169,8 +176,8 @@ public class GameManager : MonoBehaviour
         CharacterData oldData = characterDB.GetCharacter(a.Level);
         Vector3 mergePos = (a.transform.position + b.transform.position) / 2f;
 
-        AddScore(newData.mergeScore);
-        SpawnMergeEffect(mergePos, newData);
+        AddScore(characterDB.GetMergeScore(newLevel));
+        SpawnMergeEffect(mergePos, newData, newLevel);
 
         if (AudioManager.Instance != null)
         {
@@ -185,18 +192,18 @@ public class GameManager : MonoBehaviour
         GameObject go = Instantiate(characterPrefab, mergePos,
             Quaternion.identity, containerParent);
         Character newChar = go.GetComponent<Character>();
-        newChar.Initialize(newData);
+        newChar.Initialize(newData, newLevel, characterDB.GetRadius(newLevel));
         newChar.IsDropped = true;
         newChar.gameObject.layer = LayerMask.NameToLayer("Default");
     }
 
-    private void SpawnMergeEffect(Vector3 position, CharacterData data)
+    private void SpawnMergeEffect(Vector3 position, CharacterData data, int level)
     {
         if (mergeEffectPrefab == null) return;
         GameObject fx = Instantiate(mergeEffectPrefab, position, Quaternion.identity);
         MergeEffect effect = fx.GetComponent<MergeEffect>();
         if (effect != null)
-            effect.Play(position, data.mergeEffectColor, data.radius * 2f);
+            effect.Play(position, data.mergeEffectColor, characterDB.GetRadius(level) * 2f);
     }
 
     public void AddScore(int points)

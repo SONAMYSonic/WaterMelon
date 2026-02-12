@@ -508,9 +508,6 @@ public class GameSetupWizard : EditorWindow
 
             CharacterData data = ScriptableObject.CreateInstance<CharacterData>();
             data.characterName = names[i];
-            data.level = i;
-            data.radius = radii[i];
-            data.mergeScore = scores[i];
             data.mergeEffectColor = effectColors[i];
             // sprite, mergeSound, voiceClip은 나중에 수동 할당
 
@@ -526,7 +523,7 @@ public class GameSetupWizard : EditorWindow
             db = ScriptableObject.CreateInstance<CharacterDatabase>();
             AssetDatabase.CreateAsset(db, dbPath);
         }
-        db.characters = allData;
+        db.allCharacters = allData;
         EditorUtility.SetDirty(db);
         AssetDatabase.SaveAssets();
 
