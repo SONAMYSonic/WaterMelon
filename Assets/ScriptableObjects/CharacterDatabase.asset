@@ -13,34 +13,34 @@ MonoBehaviour:
   m_Name: CharacterDatabase
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDatabase
   allCharacters:
-  - {fileID: 11400000, guid: 3958bbf7dce12ac46babd98ee20c8fc2, type: 2}
-  - {fileID: 11400000, guid: 05651e905db7dfe4da513c0ac795d9ca, type: 2}
-  - {fileID: 11400000, guid: 40814dce7a10ed54babef39116957025, type: 2}
-  - {fileID: 11400000, guid: 81d45380f090ec542ae2c2e6d640a56b, type: 2}
-  - {fileID: 11400000, guid: f1543b528bb02c64b861c8b0bbbd4e8c, type: 2}
-  - {fileID: 11400000, guid: c431f40c7814d724d876fc7218bd747f, type: 2}
-  - {fileID: 11400000, guid: e9157856746769646aa0f7be957bd658, type: 2}
-  - {fileID: 11400000, guid: ca5aba100b34aae4baf31e13aff9387c, type: 2}
-  - {fileID: 11400000, guid: 1d825eb88bda97a43843c4cd9ad6114f, type: 2}
-  - {fileID: 11400000, guid: 1562ba4797112a84995cc8c05d04a935, type: 2}
-  - {fileID: 11400000, guid: 1c7cd105ee695544b849418135ebc38c, type: 2}
-  - {fileID: 11400000, guid: 26adf3c11357aac48b0444f71f3644c6, type: 2}
-  - {fileID: 11400000, guid: 6b8892e057e5bf64891c382304a70adb, type: 2}
-  - {fileID: 11400000, guid: 7388e16d72817af4a807f88210e8a8cf, type: 2}
-  - {fileID: 11400000, guid: a63d98f202f705a46b4db3eff520ed1b, type: 2}
-  - {fileID: 11400000, guid: d6606b3930e22824490fe03aa800f3c3, type: 2}
-  - {fileID: 11400000, guid: 8dce37fc958a05f4987584632ddc5b55, type: 2}
-  - {fileID: 11400000, guid: 68b64aaaa999d3c49832abbfa10e8cbb, type: 2}
-  - {fileID: 11400000, guid: 50a0a0153e8efee4ab1b8298ccae9b51, type: 2}
   - {fileID: 11400000, guid: c657db4feab59e140bea4ae70ea945db, type: 2}
-  - {fileID: 11400000, guid: e5f8a8a5c4811d5429c9850bcdf23524, type: 2}
-  - {fileID: 11400000, guid: dae47c34063f9014699e162e1e4966ec, type: 2}
-  - {fileID: 11400000, guid: 2c10230a3b50c994c94a23bc582a732b, type: 2}
-  - {fileID: 11400000, guid: 3608a30a07d89d549ad9c44c2b88a389, type: 2}
-  - {fileID: 11400000, guid: bc33042de3f5bc242ab810c07733dffc, type: 2}
-  - {fileID: 11400000, guid: 2afe676e7c8da9a4ab042f8fbdcc28bb, type: 2}
   - {fileID: 11400000, guid: ce55c4c10e878114ebaf3540890e3f46, type: 2}
-  - {fileID: 11400000, guid: 8ed0a569d0f6c1a46ae6a04cab1a23b5, type: 2}
+  - {fileID: 11400000, guid: 2afe676e7c8da9a4ab042f8fbdcc28bb, type: 2}
+  - {fileID: 11400000, guid: 50a0a0153e8efee4ab1b8298ccae9b51, type: 2}
+  - {fileID: 11400000, guid: c431f40c7814d724d876fc7218bd747f, type: 2}
+  - {fileID: 11400000, guid: 8dce37fc958a05f4987584632ddc5b55, type: 2}
+  - {fileID: 11400000, guid: d6606b3930e22824490fe03aa800f3c3, type: 2}
+  - {fileID: 11400000, guid: 26adf3c11357aac48b0444f71f3644c6, type: 2}
+  - {fileID: 11400000, guid: 05651e905db7dfe4da513c0ac795d9ca, type: 2}
+  - {fileID: 11400000, guid: 33c07e16beea8f44faa4d0cf74a3b363, type: 2}
+  - {fileID: 11400000, guid: 8bd1e9824a4a7c643ad0c349fff3587d, type: 2}
+  - {fileID: 11400000, guid: af3333e336cb8c64aa1230354faa6927, type: 2}
+  - {fileID: 11400000, guid: f8003ca4843ef834cb80f3c714e20dd1, type: 2}
+  - {fileID: 11400000, guid: 5f69ad50588e30c4e827897cd7383084, type: 2}
+  - {fileID: 11400000, guid: ecd49ff2fcd5d6044a028289bfcd183f, type: 2}
+  - {fileID: 11400000, guid: bccc46f2680e26146b638cf76acc8080, type: 2}
+  - {fileID: 11400000, guid: 584d231119d7ef3488da6db03a0cf823, type: 2}
+  - {fileID: 11400000, guid: 8a93e6dd8d7b1984f8e33e97e003a3eb, type: 2}
+  - {fileID: 11400000, guid: e79643b897e8b5b4eaade4cb514747ee, type: 2}
+  - {fileID: 11400000, guid: 995f462d1b86ab3489275e46e6318154, type: 2}
+  - {fileID: 11400000, guid: 203326371c8b2fc4db028a66eb2f9ee4, type: 2}
+  - {fileID: 11400000, guid: 0b3743d859e08d041a14de65d8b4c85f, type: 2}
+  - {fileID: 11400000, guid: 6804964c4e46b074b91293beec13f43d, type: 2}
+  - {fileID: 11400000, guid: 1219cdbd3980bb4429016bc3249213ff, type: 2}
+  - {fileID: 11400000, guid: e622c8b06eaa6744eb9b2d316fe9d555, type: 2}
+  - {fileID: 11400000, guid: dd65c1deed921224594295aff1b6a995, type: 2}
+  - {fileID: 11400000, guid: 160c0743c0f419f4880b6f48b639676f, type: 2}
+  - {fileID: 11400000, guid: 8e053a20bef76c94f8d39cb1303c0231, type: 2}
   levelCount: 11
   minRadius: 0.2
   maxRadius: 0.8

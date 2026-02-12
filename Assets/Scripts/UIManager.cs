@@ -52,6 +52,8 @@ public class UIManager : MonoBehaviour
         UpdateHighScore(PlayerPrefs.GetInt("HighScore", 0));
     }
 
+    private const int ColumnsPerRow = 3;
+
     private void BuildEvolutionChart()
     {
         if (evolutionChartContent == null || characterDB == null) return;
@@ -60,60 +62,102 @@ public class UIManager : MonoBehaviour
         for (int i = evolutionChartContent.childCount - 1; i >= 0; i--)
             Destroy(evolutionChartContent.GetChild(i).gameObject);
 
-        for (int i = 0; i <= characterDB.MaxLevel; i++)
+        int totalLevels = characterDB.MaxLevel + 1; // 0 ~ MaxLevel
+        int maxLevel = characterDB.MaxLevel;
+        Transform currentRow = null;
+        int colIndex = 0;
+
+        for (int i = 0; i < totalLevels; i++)
         {
+            // 새 행 시작 (3개마다)
+            if (colIndex == 0)
+            {
+                currentRow = CreateRow(evolutionChartContent, i / ColumnsPerRow);
+            }
+
             CharacterData data = characterDB.GetCharacter(i);
             if (data == null) continue;
-            CreateEvolutionRow(evolutionChartContent, data, i);
+
+            CreateEvolutionCell(currentRow, data, i, maxLevel);
+
+            colIndex++;
+            if (colIndex >= ColumnsPerRow)
+                colIndex = 0;
         }
     }
 
-    private void CreateEvolutionRow(Transform parent, CharacterData data, int level)
+    private Transform CreateRow(Transform parent, int rowIndex)
     {
-        if (evolutionRowPrefab != null)
-        {
-            var row = Instantiate(evolutionRowPrefab, parent);
-            row.name = $"Evo_Lv{level}";
-            var icon = row.transform.Find("Icon")?.GetComponent<Image>();
-            if (icon != null)
-            {
-                icon.sprite = data.characterSprite;
-                icon.preserveAspect = true;
-            }
-            var lvl = row.transform.Find("Lvl")?.GetComponent<TextMeshProUGUI>();
-            if (lvl != null)
-                lvl.text = $"Lv.{level}";
-            return;
-        }
-
-        // 프리팹이 없으면 기존 방식으로 코드 생성
-        var rowGo = new GameObject($"Evo_Lv{level}", typeof(RectTransform),
+        var rowGo = new GameObject($"Row_{rowIndex}", typeof(RectTransform),
             typeof(HorizontalLayoutGroup));
         rowGo.transform.SetParent(parent, false);
-        rowGo.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 42);
 
         var hlg = rowGo.GetComponent<HorizontalLayoutGroup>();
         hlg.spacing = 8;
-        hlg.childAlignment = TextAnchor.MiddleLeft;
-        hlg.padding = new RectOffset(5, 5, 2, 2);
+        hlg.childAlignment = TextAnchor.MiddleCenter;
+        hlg.padding = new RectOffset(5, 5, 5, 5);
         hlg.childControlWidth = false;
         hlg.childControlHeight = false;
+        hlg.childForceExpandWidth = false;
+        hlg.childForceExpandHeight = false;
 
-        var iconGo = new GameObject("Icon", typeof(RectTransform), typeof(Image));
-        iconGo.transform.SetParent(rowGo.transform, false);
-        iconGo.GetComponent<RectTransform>().sizeDelta = new Vector2(36, 36);
+        // LayoutElement으로 행 높이 유연하게
+        var le = rowGo.AddComponent<LayoutElement>();
+        le.minHeight = 80;
+        le.flexibleHeight = 1;
+
+        return rowGo.transform;
+    }
+
+    private void CreateEvolutionCell(Transform parent, CharacterData data, int level, int maxLevel)
+    {
+        if (evolutionRowPrefab != null)
+        {
+            var cell = Instantiate(evolutionRowPrefab, parent);
+            cell.name = $"Evo_Lv{level}";
+            var entry = cell.GetComponent<EvolutionEntry>();
+            if (entry != null)
+            {
+                entry.Setup(data, level, maxLevel);
+            }
+            return;
+        }
+
+        // 프리팹이 없으면 코드로 생성 (세로 배치: 이미지 위, 텍스트 아래)
+        var cellGo = new GameObject($"Evo_Lv{level}", typeof(RectTransform),
+            typeof(VerticalLayoutGroup));
+        cellGo.transform.SetParent(parent, false);
+
+        var vlg = cellGo.GetComponent<VerticalLayoutGroup>();
+        vlg.spacing = 2;
+        vlg.childAlignment = TextAnchor.MiddleCenter;
+        vlg.padding = new RectOffset(4, 4, 4, 4);
+        vlg.childControlWidth = false;
+        vlg.childControlHeight = false;
+        vlg.childForceExpandWidth = false;
+        vlg.childForceExpandHeight = false;
+
+        // 레벨에 따른 이미지 크기
+        float t = maxLevel > 0 ? (float)level / maxLevel : 0f;
+        float imageSize = Mathf.Lerp(50f, 110f, t);
+
+        // 캐릭터 이미지
+        var iconGo = new GameObject("CharImage", typeof(RectTransform), typeof(Image));
+        iconGo.transform.SetParent(cellGo.transform, false);
+        iconGo.GetComponent<RectTransform>().sizeDelta = new Vector2(imageSize, imageSize);
         var iconImg = iconGo.GetComponent<Image>();
         iconImg.sprite = data.characterSprite;
         iconImg.preserveAspect = true;
 
-        var txtGo = new GameObject("Lvl", typeof(RectTransform), typeof(TextMeshProUGUI));
-        txtGo.transform.SetParent(rowGo.transform, false);
-        txtGo.GetComponent<RectTransform>().sizeDelta = new Vector2(90, 36);
+        // 레벨 텍스트
+        var txtGo = new GameObject("LevelText", typeof(RectTransform), typeof(TextMeshProUGUI));
+        txtGo.transform.SetParent(cellGo.transform, false);
+        txtGo.GetComponent<RectTransform>().sizeDelta = new Vector2(imageSize, 20);
         var tmp = txtGo.GetComponent<TextMeshProUGUI>();
         tmp.text = $"Lv.{level}";
-        tmp.fontSize = 16;
+        tmp.fontSize = 14;
         tmp.color = Color.white;
-        tmp.alignment = TextAlignmentOptions.Left;
+        tmp.alignment = TextAlignmentOptions.Center;
     }
 
     private void ShowGameOver()

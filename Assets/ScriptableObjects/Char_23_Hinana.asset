@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca20bd2a1a4eb314fb39aea7587b7af2, type: 3}
+  m_Name: Char_23_Hinana
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData
+  characterName: Hinana
+  characterSprite: {fileID: 21300000, guid: 3d10c42865f58c5498f973dff5f961ff, type: 3}
+  mergeSound: {fileID: 0}
+  voiceClip: {fileID: 0}
+  mergeEffectColor: {r: 1, g: 0.7764706, b: 0.22352941, a: 1}

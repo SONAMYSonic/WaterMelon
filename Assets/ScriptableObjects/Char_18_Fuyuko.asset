@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca20bd2a1a4eb314fb39aea7587b7af2, type: 3}
+  m_Name: Char_18_Fuyuko
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData
+  characterName: Fuyuko
+  characterSprite: {fileID: 21300000, guid: 858c9bb7329e3ea42b6242aa4bfefeb9, type: 3}
+  mergeSound: {fileID: 0}
+  voiceClip: {fileID: 0}
+  mergeEffectColor: {r: 0.36078432, g: 0.9019608, b: 0.14901961, a: 1}

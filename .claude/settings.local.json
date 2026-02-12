@@ -2,7 +2,14 @@
   "permissions": {
     "allow": [
       "mcp__unityMCP__find_gameobjects",
-      "mcp__unityMCP__execute_menu_item"
+      "mcp__unityMCP__execute_menu_item",
+      "mcp__unityMCP__batch_execute",
+      "Bash(dir:*)",
+      "Bash(ls:*)",
+      "Bash(echo:*)",
+      "Bash(grep:*)",
+      "mcp__unityMCP__validate_script",
+      "mcp__unityMCP__manage_texture"
     ]
   }
 }
