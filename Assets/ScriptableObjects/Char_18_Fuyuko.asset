@@ -15,5 +15,5 @@ MonoBehaviour:
   characterName: Fuyuko
   characterSprite: {fileID: 21300000, guid: 858c9bb7329e3ea42b6242aa4bfefeb9, type: 3}
   mergeSound: {fileID: 0}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 58ede26d48fd5434db6a9344efaf96b8, type: 3}
   mergeEffectColor: {r: 0.36078432, g: 0.9019608, b: 0.14901961, a: 1}

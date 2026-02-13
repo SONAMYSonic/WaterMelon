@@ -15,5 +15,5 @@ MonoBehaviour:
   characterName: Toru
   characterSprite: {fileID: 21300000, guid: 6abe876f110894645b1f1381c6187a4f, type: 3}
   mergeSound: {fileID: 0}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: fec9e859ddc48a3428dbd672580e94ec, type: 3}
   mergeEffectColor: {r: 0.3137255, g: 0.8156863, b: 0.8156863, a: 1}

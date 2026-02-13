@@ -15,5 +15,5 @@ MonoBehaviour:
   characterName: Amana
   characterSprite: {fileID: 21300000, guid: 80444a16805d62b4e8b81261293947a4, type: 3}
   mergeSound: {fileID: 0}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: e85e3ffbf1c7d43478855673274c120d, type: 3}
   mergeEffectColor: {r: 0.9607843, g: 0.23529412, b: 0.44313726, a: 1}

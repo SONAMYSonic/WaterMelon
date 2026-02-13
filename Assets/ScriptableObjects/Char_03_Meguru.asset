@@ -15,5 +15,5 @@ MonoBehaviour:
   characterName: Meguru
   characterSprite: {fileID: 21300000, guid: 64b77db76fbde4142a9175ea223526f0, type: 3}
   mergeSound: {fileID: 0}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: d7735a9443d067343b90bf4399bf9756, type: 3}
   mergeEffectColor: {r: 1, g: 0.8784314, b: 0.07058824, a: 1}

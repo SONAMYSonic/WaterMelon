@@ -15,5 +15,5 @@ MonoBehaviour:
   characterName: Hiori
   characterSprite: {fileID: 21300000, guid: 6f86ac6272cef824188b6b0ddfa7e051, type: 3}
   mergeSound: {fileID: 0}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: f210070bf7c15ba4ea23d870d0afc026, type: 3}
   mergeEffectColor: {r: 0.078431375, g: 0.2627451, b: 0.5176471, a: 1}

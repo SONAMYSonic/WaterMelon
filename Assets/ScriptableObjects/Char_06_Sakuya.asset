@@ -15,5 +15,5 @@ MonoBehaviour:
   characterName: Sakuya
   characterSprite: {fileID: 21300000, guid: 9be92c03f6636db43b0005212b5bbb84, type: 3}
   mergeSound: {fileID: 0}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: a12f5b579d152e344a0cfd723398140b, type: 3}
   mergeEffectColor: {r: 0, g: 0.37254903, b: 0.27450982, a: 1}

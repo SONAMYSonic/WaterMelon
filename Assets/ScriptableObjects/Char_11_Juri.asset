@@ -15,5 +15,5 @@ MonoBehaviour:
   characterName: Juri
   characterSprite: {fileID: 21300000, guid: bd245d3317051304794a6365a3a6eedb, type: 3}
   mergeSound: {fileID: 0}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: c1ecd2eb9131d894c9afbb7d682bd54d, type: 3}
   mergeEffectColor: {r: 0.99607843, g: 0.78039217, b: 0.023529412, a: 1}

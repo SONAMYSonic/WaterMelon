@@ -15,5 +15,5 @@ MonoBehaviour:
   characterName: Mano
   characterSprite: {fileID: 21300000, guid: 89d2f1c87f2d3a54c8067328f4be9bf4, type: 3}
   mergeSound: {fileID: 0}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 2c3f27261f4c22145ab0095cb7f23255, type: 3}
   mergeEffectColor: {r: 1, g: 0.7294118, b: 0.8392157, a: 1}

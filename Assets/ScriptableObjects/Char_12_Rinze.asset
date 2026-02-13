@@ -15,5 +15,5 @@ MonoBehaviour:
   characterName: Rinze
   characterSprite: {fileID: 21300000, guid: d4fe0f070d1872b4e99229475149e18b, type: 3}
   mergeSound: {fileID: 0}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 8b35c08d870e789408e96d3dd28c992b, type: 3}
   mergeEffectColor: {r: 0.5294118, g: 0.7607843, b: 0.92156863, a: 1}

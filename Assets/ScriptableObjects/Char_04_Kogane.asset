@@ -15,5 +15,5 @@ MonoBehaviour:
   characterName: Kogane
   characterSprite: {fileID: 21300000, guid: b1e47847343bf9345a67ebf3485a88c1, type: 3}
   mergeSound: {fileID: 0}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 1e533fdb70ebb7b4886e658020667e3f, type: 3}
   mergeEffectColor: {r: 0.9764706, g: 0.29803923, b: 0.6784314, a: 1}

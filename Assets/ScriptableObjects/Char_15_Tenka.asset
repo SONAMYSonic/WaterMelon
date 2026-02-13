@@ -15,5 +15,5 @@ MonoBehaviour:
   characterName: Tenka
   characterSprite: {fileID: 21300000, guid: 1d6e13ba4d347e446812af355f54a6f9, type: 3}
   mergeSound: {fileID: 0}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 37fdeba9a5dce744db24cbe5c7aba030, type: 3}
   mergeEffectColor: {r: 0.84313726, g: 0.35686275, b: 0.9254902, a: 1}

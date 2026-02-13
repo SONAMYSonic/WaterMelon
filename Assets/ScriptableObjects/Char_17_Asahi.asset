@@ -15,5 +15,5 @@ MonoBehaviour:
   characterName: Asahi
   characterSprite: {fileID: 21300000, guid: a44b1b64f7636c3499a6bb7f3d895bb6, type: 3}
   mergeSound: {fileID: 0}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: ac230f9c9b649a440bc5f90ab08a3e6b, type: 3}
   mergeEffectColor: {r: 0.9529412, g: 0.003921569, b: 0, a: 1}

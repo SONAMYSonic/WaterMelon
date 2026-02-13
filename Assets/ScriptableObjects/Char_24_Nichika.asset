@@ -15,5 +15,5 @@ MonoBehaviour:
   characterName: Nichika
   characterSprite: {fileID: 21300000, guid: 33b2399135468fd43be48f66fd75f9eb, type: 3}
   mergeSound: {fileID: 0}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 2c2de28defa3f1642a9647645811bf3c, type: 3}
   mergeEffectColor: {r: 0.6509804, g: 0.80784315, b: 0.7137255, a: 1}

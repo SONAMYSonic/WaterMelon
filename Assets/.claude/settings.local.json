@@ -4,7 +4,9 @@
       "mcp__unityMCP__manage_gameobject",
       "mcp__unityMCP__execute_menu_item",
       "mcp__unityMCP__find_gameobjects",
-      "mcp__unityMCP__manage_prefabs"
+      "mcp__unityMCP__manage_prefabs",
+      "Bash(for f in 'C:\\\\Users\\\\mknoh\\\\Desktop\\\\WaterMelon\\\\Assets\\\\Audio\\\\Voice'/*.mp3.meta)",
+      "Bash(do basename \"$f\")"
     ]
   }
 }

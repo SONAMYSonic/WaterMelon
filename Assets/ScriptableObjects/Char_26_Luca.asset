@@ -15,5 +15,5 @@ MonoBehaviour:
   characterName: Luca
   characterSprite: {fileID: 21300000, guid: d210d4fb64a71cf4f807c17aef8d654b, type: 3}
   mergeSound: {fileID: 0}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: b15046667a3114748b7660cb72cd7199, type: 3}
   mergeEffectColor: {r: 0.14117648, g: 0.07450981, b: 0.050980393, a: 1}

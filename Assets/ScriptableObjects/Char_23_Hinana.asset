@@ -15,5 +15,5 @@ MonoBehaviour:
   characterName: Hinana
   characterSprite: {fileID: 21300000, guid: 3d10c42865f58c5498f973dff5f961ff, type: 3}
   mergeSound: {fileID: 0}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: ad2090c872c5239488b2d2bafe2aed36, type: 3}
   mergeEffectColor: {r: 1, g: 0.7764706, b: 0.22352941, a: 1}

@@ -15,5 +15,5 @@ MonoBehaviour:
   characterName: Kiriko
   characterSprite: {fileID: 21300000, guid: 3011dfc442ba0b448807bbb8fb518c24, type: 3}
   mergeSound: {fileID: 0}
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 163354392953e3c48ab2e1be6423ef06, type: 3}
   mergeEffectColor: {r: 0.8509804, g: 0.9490196, b: 1, a: 1}
