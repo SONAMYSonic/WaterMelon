@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -17,7 +19,6 @@ public class UIManager : MonoBehaviour
 
     [Header("다음 캐릭터 UI")]
     [SerializeField] private Image nextCharacterImage;
-    [SerializeField] private TextMeshProUGUI nextCharacterName;
 
     [Header("진화 차트")]
     [SerializeField] private Transform evolutionChartContent;
@@ -29,6 +30,43 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private TextMeshProUGUI finalScoreText;
     [SerializeField] private Button restartButton;
+
+    [Header("게임오버 - 닉네임 입력")]
+    [SerializeField] private GameObject nicknameGroup;
+    [SerializeField] private TMP_InputField nicknameInput;
+    [SerializeField] private Button submitScoreButton;
+    [SerializeField] private Button skipButton;
+    [SerializeField] private TextMeshProUGUI submittedText;
+
+    [Header("설정 UI")]
+    [SerializeField] private GameObject settingsPanel;
+    [SerializeField] private Button settingsButton;
+    [SerializeField] private Button settingsCloseButton;
+    [SerializeField] private Slider bgmSlider;
+    [SerializeField] private Slider sfxSlider;
+    [SerializeField] private Slider voiceSlider;
+
+    [Header("리더보드 UI")]
+    [SerializeField] private GameObject leaderboardPanel;
+    [SerializeField] private Button leaderboardButton;
+    [SerializeField] private Button leaderboardCloseButton;
+    [SerializeField] private Button leaderboardRefreshButton;
+    [SerializeField] private Transform leaderboardContent;
+    [SerializeField] private TextMeshProUGUI cooldownText;
+
+    [Header("인게임 재시작")]
+    [SerializeField] private Button inGameRestartButton;
+    [SerializeField] private GameObject confirmRestartPanel;
+    [SerializeField] private Button confirmRestartYesBtn;
+    [SerializeField] private Button confirmRestartNoBtn;
+
+    [Header("캐릭터 새로고침")]
+    [SerializeField] private Button refreshCharactersButton;
+    [SerializeField] private GameObject confirmRefreshPanel;
+    [SerializeField] private Button confirmRefreshYesBtn;
+    [SerializeField] private Button confirmRefreshNoBtn;
+
+    private Coroutine cooldownCoroutine;
 
     private void Start()
     {
@@ -46,12 +84,100 @@ public class UIManager : MonoBehaviour
         }
 
         if (restartButton != null)
-            restartButton.onClick.AddListener(() => GameManager.Instance.RestartGame());
+            restartButton.onClick.AddListener(() =>
+            {
+                PlayUIClick();
+                GameManager.Instance.RestartGame();
+            });
+
+        // 설정 패널 초기화
+        if (settingsPanel != null)
+            settingsPanel.SetActive(false);
+
+        if (settingsButton != null)
+            settingsButton.onClick.AddListener(OpenSettings);
+
+        if (settingsCloseButton != null)
+            settingsCloseButton.onClick.AddListener(CloseSettings);
+
+        // 슬라이더 초기값 및 콜백 연결
+        if (AudioManager.Instance != null)
+        {
+            if (bgmSlider != null)
+            {
+                bgmSlider.value = AudioManager.Instance.BGMVolume;
+                bgmSlider.onValueChanged.AddListener(AudioManager.Instance.SetBGMVolume);
+            }
+            if (sfxSlider != null)
+            {
+                sfxSlider.value = AudioManager.Instance.SFXVolume;
+                sfxSlider.onValueChanged.AddListener(AudioManager.Instance.SetSFXVolume);
+            }
+            if (voiceSlider != null)
+            {
+                voiceSlider.value = AudioManager.Instance.VoiceVolume;
+                voiceSlider.onValueChanged.AddListener(AudioManager.Instance.SetVoiceVolume);
+            }
+        }
+
+        // 리더보드 패널 초기화
+        if (leaderboardPanel != null)
+            leaderboardPanel.SetActive(false);
+
+        if (leaderboardButton != null)
+            leaderboardButton.onClick.AddListener(OpenLeaderboard);
+
+        if (leaderboardCloseButton != null)
+            leaderboardCloseButton.onClick.AddListener(CloseLeaderboard);
+
+        if (leaderboardRefreshButton != null)
+            leaderboardRefreshButton.onClick.AddListener(RefreshLeaderboard);
+
+        // 닉네임 관련 버튼 연결
+        if (submitScoreButton != null)
+            submitScoreButton.onClick.AddListener(SubmitScore);
+
+        if (skipButton != null)
+            skipButton.onClick.AddListener(SkipSubmit);
+
+        // 닉네임 입력 초기값 (마지막 사용 닉네임)
+        if (nicknameInput != null)
+        {
+            nicknameInput.characterLimit = 12;
+            nicknameInput.text = PlayerPrefs.GetString("LastNickname", "");
+        }
+
+        // 인게임 재시작 버튼
+        if (confirmRestartPanel != null)
+            confirmRestartPanel.SetActive(false);
+
+        if (inGameRestartButton != null)
+            inGameRestartButton.onClick.AddListener(ShowRestartConfirm);
+
+        if (confirmRestartYesBtn != null)
+            confirmRestartYesBtn.onClick.AddListener(ConfirmRestart);
+
+        if (confirmRestartNoBtn != null)
+            confirmRestartNoBtn.onClick.AddListener(CancelRestart);
+
+        // 캐릭터 새로고침 버튼
+        if (confirmRefreshPanel != null)
+            confirmRefreshPanel.SetActive(false);
+
+        if (refreshCharactersButton != null)
+            refreshCharactersButton.onClick.AddListener(OnRefreshClicked);
+
+        if (confirmRefreshYesBtn != null)
+            confirmRefreshYesBtn.onClick.AddListener(ConfirmRefresh);
+
+        if (confirmRefreshNoBtn != null)
+            confirmRefreshNoBtn.onClick.AddListener(CancelRefresh);
 
         UpdateScore(0);
         UpdateHighScore(PlayerPrefs.GetInt("HighScore", 0));
     }
 
+    // ===== 진화 차트 =====
     private const int ColumnsPerRow = 3;
 
     private void BuildEvolutionChart()
@@ -137,9 +263,7 @@ public class UIManager : MonoBehaviour
         vlg.childForceExpandWidth = false;
         vlg.childForceExpandHeight = false;
 
-        // 레벨에 따른 이미지 크기
-        float t = maxLevel > 0 ? (float)level / maxLevel : 0f;
-        float imageSize = Mathf.Lerp(50f, 110f, t);
+        float imageSize = 110f;
 
         // 캐릭터 이미지
         var iconGo = new GameObject("CharImage", typeof(RectTransform), typeof(Image));
@@ -160,17 +284,424 @@ public class UIManager : MonoBehaviour
         tmp.alignment = TextAlignmentOptions.Center;
     }
 
+    // ===== UI 효과음 헬퍼 =====
+    private void PlayUIClick()
+    {
+        if (AudioManager.Instance != null) AudioManager.Instance.PlayUIClick();
+    }
+
+    private void PlayUIClose()
+    {
+        if (AudioManager.Instance != null) AudioManager.Instance.PlayUIClose();
+    }
+
+    // ===== 패널 상태 헬퍼 =====
+    private bool IsAnyPanelOpen()
+    {
+        bool settingsOpen = settingsPanel != null && settingsPanel.activeSelf;
+        bool leaderboardOpen = leaderboardPanel != null && leaderboardPanel.activeSelf;
+        bool restartConfirmOpen = confirmRestartPanel != null && confirmRestartPanel.activeSelf;
+        bool refreshConfirmOpen = confirmRefreshPanel != null && confirmRefreshPanel.activeSelf;
+        return settingsOpen || leaderboardOpen || restartConfirmOpen || refreshConfirmOpen;
+    }
+
+    // ===== 설정 =====
+    private void OpenSettings()
+    {
+        if (GameManager.Instance != null && GameManager.Instance.IsGameOver) return;
+        PlayUIClick();
+
+        // 다른 패널이 열려 있으면 먼저 닫기
+        if (leaderboardPanel != null && leaderboardPanel.activeSelf)
+            CloseLeaderboardPanel();
+        if (confirmRestartPanel != null && confirmRestartPanel.activeSelf)
+            confirmRestartPanel.SetActive(false);
+        if (confirmRefreshPanel != null && confirmRefreshPanel.activeSelf)
+            confirmRefreshPanel.SetActive(false);
+
+        if (settingsPanel != null)
+            settingsPanel.SetActive(true);
+        if (GameManager.Instance != null)
+            GameManager.Instance.SetPaused(true);
+    }
+
+    private void CloseSettings()
+    {
+        PlayUIClose();
+        if (settingsPanel != null)
+            settingsPanel.SetActive(false);
+        PlayerPrefs.Save();
+
+        // 다른 패널이 열려 있지 않을 때만 게임 재개
+        if (!IsAnyPanelOpen() && GameManager.Instance != null)
+            GameManager.Instance.SetPaused(false);
+    }
+
+    // ===== 리더보드 =====
+    private void OpenLeaderboard()
+    {
+        if (GameManager.Instance != null && GameManager.Instance.IsGameOver) return;
+        PlayUIClick();
+
+        // 다른 패널이 열려 있으면 먼저 닫기
+        if (settingsPanel != null && settingsPanel.activeSelf)
+            CloseSettingsPanel();
+        if (confirmRestartPanel != null && confirmRestartPanel.activeSelf)
+            confirmRestartPanel.SetActive(false);
+        if (confirmRefreshPanel != null && confirmRefreshPanel.activeSelf)
+            confirmRefreshPanel.SetActive(false);
+
+        if (leaderboardPanel != null)
+            leaderboardPanel.SetActive(true);
+        if (GameManager.Instance != null)
+            GameManager.Instance.SetPaused(true);
+        RefreshLeaderboard();
+    }
+
+    private void CloseLeaderboard()
+    {
+        PlayUIClose();
+        CloseLeaderboardPanel();
+
+        // 다른 패널이 열려 있지 않을 때만 게임 재개
+        if (!IsAnyPanelOpen() && GameManager.Instance != null)
+            GameManager.Instance.SetPaused(false);
+    }
+
+    // 패널 UI만 닫기 (게임 재개 판단 없이)
+    private void CloseSettingsPanel()
+    {
+        if (settingsPanel != null)
+            settingsPanel.SetActive(false);
+        PlayerPrefs.Save();
+    }
+
+    private void CloseLeaderboardPanel()
+    {
+        if (leaderboardPanel != null)
+            leaderboardPanel.SetActive(false);
+
+        if (cooldownCoroutine != null)
+        {
+            StopCoroutine(cooldownCoroutine);
+            cooldownCoroutine = null;
+        }
+    }
+
+    private void RefreshLeaderboard()
+    {
+        PlayUIClick();
+        if (LeaderboardManager.Instance == null) return;
+
+        if (!LeaderboardManager.Instance.CanFetch)
+        {
+            // 쿨다운 중이면 캐시 표시 + 쿨다운 타이머
+            PopulateLeaderboardUI(LeaderboardManager.Instance.CachedEntries);
+            StartCooldownTimer();
+            return;
+        }
+
+        // 로딩 중 표시
+        if (cooldownText != null)
+            cooldownText.text = "불러오는 중...";
+
+        LeaderboardManager.Instance.FetchLeaderboard((entries) =>
+        {
+            PopulateLeaderboardUI(entries);
+            StartCooldownTimer();
+        });
+    }
+
+    private void PopulateLeaderboardUI(List<LeaderboardEntry> entries)
+    {
+        if (leaderboardContent == null) return;
+
+        // 기존 행 제거
+        for (int i = leaderboardContent.childCount - 1; i >= 0; i--)
+            Destroy(leaderboardContent.GetChild(i).gameObject);
+
+        if (entries == null || entries.Count == 0)
+        {
+            CreateLeaderboardRow(leaderboardContent, "-", "데이터 없음", "");
+            return;
+        }
+
+        for (int i = 0; i < entries.Count; i++)
+        {
+            string rank = (i + 1).ToString();
+            string playerName = entries[i].player_name;
+            string score = entries[i].score.ToString("N0");
+            CreateLeaderboardRow(leaderboardContent, rank, playerName, score);
+        }
+    }
+
+    private void CreateLeaderboardRow(Transform parent, string rank, string playerName, string score)
+    {
+        var rowGo = new GameObject("LBRow", typeof(RectTransform), typeof(HorizontalLayoutGroup));
+        rowGo.transform.SetParent(parent, false);
+
+        var hlg = rowGo.GetComponent<HorizontalLayoutGroup>();
+        hlg.spacing = 10;
+        hlg.childAlignment = TextAnchor.MiddleCenter;
+        hlg.padding = new RectOffset(10, 10, 2, 2);
+        hlg.childControlWidth = true;
+        hlg.childControlHeight = true;
+        hlg.childForceExpandWidth = false;
+        hlg.childForceExpandHeight = false;
+
+        var rowLE = rowGo.AddComponent<LayoutElement>();
+        rowLE.preferredHeight = 36;
+
+        // 순위
+        CreateLBCell(rowGo.transform, rank, 60, TextAlignmentOptions.Center);
+        // 이름
+        CreateLBCell(rowGo.transform, playerName, 220, TextAlignmentOptions.Left);
+        // 점수
+        CreateLBCell(rowGo.transform, score, 140, TextAlignmentOptions.Right);
+    }
+
+    private void CreateLBCell(Transform parent, string text, float width, TextAlignmentOptions align)
+    {
+        var cellGo = new GameObject("Cell", typeof(RectTransform), typeof(TextMeshProUGUI));
+        cellGo.transform.SetParent(parent, false);
+
+        var le = cellGo.AddComponent<LayoutElement>();
+        le.preferredWidth = width;
+        le.flexibleWidth = 0;
+
+        var tmp = cellGo.GetComponent<TextMeshProUGUI>();
+        tmp.text = text;
+        tmp.fontSize = 20;
+        tmp.color = Color.white;
+        tmp.alignment = align;
+    }
+
+    private void StartCooldownTimer()
+    {
+        if (cooldownCoroutine != null)
+            StopCoroutine(cooldownCoroutine);
+        cooldownCoroutine = StartCoroutine(CooldownTimerCoroutine());
+    }
+
+    private IEnumerator CooldownTimerCoroutine()
+    {
+        while (LeaderboardManager.Instance != null && !LeaderboardManager.Instance.CanFetch)
+        {
+            UpdateCooldownDisplay();
+            yield return new WaitForSecondsRealtime(0.5f);
+        }
+        UpdateCooldownDisplay();
+        cooldownCoroutine = null;
+    }
+
+    private void UpdateCooldownDisplay()
+    {
+        if (cooldownText == null) return;
+
+        if (LeaderboardManager.Instance == null)
+        {
+            cooldownText.text = "";
+            return;
+        }
+
+        float remaining = LeaderboardManager.Instance.CooldownRemaining;
+        if (remaining > 0f)
+            cooldownText.text = $"새로고침 ({Mathf.CeilToInt(remaining)}초)";
+        else
+            cooldownText.text = "새로고침 가능";
+    }
+
+    // ===== 인게임 재시작 확인 =====
+    private void ShowRestartConfirm()
+    {
+        if (GameManager.Instance != null && GameManager.Instance.IsGameOver) return;
+        PlayUIClick();
+
+        // 다른 패널 닫기
+        if (settingsPanel != null && settingsPanel.activeSelf)
+            CloseSettingsPanel();
+        if (leaderboardPanel != null && leaderboardPanel.activeSelf)
+            CloseLeaderboardPanel();
+        if (confirmRefreshPanel != null && confirmRefreshPanel.activeSelf)
+            confirmRefreshPanel.SetActive(false);
+
+        if (confirmRestartPanel != null)
+            confirmRestartPanel.SetActive(true);
+        if (GameManager.Instance != null)
+            GameManager.Instance.SetPaused(true);
+    }
+
+    private void ConfirmRestart()
+    {
+        PlayUIClick();
+        if (confirmRestartPanel != null)
+            confirmRestartPanel.SetActive(false);
+        if (GameManager.Instance != null)
+            GameManager.Instance.RestartGame();
+    }
+
+    private void CancelRestart()
+    {
+        PlayUIClose();
+        if (confirmRestartPanel != null)
+            confirmRestartPanel.SetActive(false);
+
+        if (!IsAnyPanelOpen() && GameManager.Instance != null)
+            GameManager.Instance.SetPaused(false);
+    }
+
+    // ===== 캐릭터 새로고침 =====
+    private void OnRefreshClicked()
+    {
+        if (GameManager.Instance == null) return;
+        if (GameManager.Instance.IsGameOver) return;
+        PlayUIClick();
+
+        // 과일이 아직 없으면 조용히 리롤
+        if (!GameManager.Instance.HasDroppedAny)
+        {
+            GameManager.Instance.RerollCharacters();
+            return;
+        }
+
+        // 과일이 있으면 확인창 표시
+        // 다른 패널 닫기
+        if (settingsPanel != null && settingsPanel.activeSelf)
+            CloseSettingsPanel();
+        if (leaderboardPanel != null && leaderboardPanel.activeSelf)
+            CloseLeaderboardPanel();
+        if (confirmRestartPanel != null && confirmRestartPanel.activeSelf)
+            confirmRestartPanel.SetActive(false);
+
+        if (confirmRefreshPanel != null)
+            confirmRefreshPanel.SetActive(true);
+        if (GameManager.Instance != null)
+            GameManager.Instance.SetPaused(true);
+    }
+
+    private void ConfirmRefresh()
+    {
+        PlayUIClick();
+        if (confirmRefreshPanel != null)
+            confirmRefreshPanel.SetActive(false);
+
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.SetPaused(false);
+            GameManager.Instance.SoftRestart();
+        }
+    }
+
+    private void CancelRefresh()
+    {
+        PlayUIClose();
+        if (confirmRefreshPanel != null)
+            confirmRefreshPanel.SetActive(false);
+
+        if (!IsAnyPanelOpen() && GameManager.Instance != null)
+            GameManager.Instance.SetPaused(false);
+    }
+
+    // ===== 게임오버 & 닉네임 =====
     private void ShowGameOver()
     {
+        // 모든 확인창 닫기
+        if (confirmRestartPanel != null && confirmRestartPanel.activeSelf)
+            confirmRestartPanel.SetActive(false);
+        if (confirmRefreshPanel != null && confirmRefreshPanel.activeSelf)
+            confirmRefreshPanel.SetActive(false);
+
+        // 설정창이 열려 있으면 닫기
+        if (settingsPanel != null && settingsPanel.activeSelf)
+            CloseSettings();
+
+        // 리더보드 패널 열려 있으면 닫기
+        if (leaderboardPanel != null && leaderboardPanel.activeSelf)
+            CloseLeaderboard();
+
+        // 인게임 버튼들 숨기기
+        if (settingsButton != null)
+            settingsButton.gameObject.SetActive(false);
+        if (leaderboardButton != null)
+            leaderboardButton.gameObject.SetActive(false);
+        if (inGameRestartButton != null)
+            inGameRestartButton.gameObject.SetActive(false);
+        if (refreshCharactersButton != null)
+            refreshCharactersButton.gameObject.SetActive(false);
+
         if (gameOverPanel != null)
         {
             gameOverPanel.SetActive(true);
             if (finalScoreText != null)
                 finalScoreText.text = $"FINAL SCORE: {GameManager.Instance.Score:N0}";
-            return;
+
+            // Phase 1: 닉네임 입력 표시
+            if (nicknameGroup != null)
+                nicknameGroup.SetActive(true);
+            if (skipButton != null)
+                skipButton.gameObject.SetActive(true);
+            if (submittedText != null)
+                submittedText.gameObject.SetActive(false);
+            if (restartButton != null)
+                restartButton.gameObject.SetActive(false);
+
+            // 마지막 사용한 닉네임 복원
+            if (nicknameInput != null)
+                nicknameInput.text = PlayerPrefs.GetString("LastNickname", "");
         }
     }
 
+    private void SubmitScore()
+    {
+        PlayUIClick();
+        if (LeaderboardManager.Instance == null || GameManager.Instance == null) return;
+
+        string nickname = nicknameInput != null ? nicknameInput.text.Trim() : "";
+        if (string.IsNullOrEmpty(nickname))
+            nickname = "익명";
+
+        // 닉네임 저장
+        PlayerPrefs.SetString("LastNickname", nickname);
+        PlayerPrefs.Save();
+
+        // 버튼 비활성화 (중복 클릭 방지)
+        if (submitScoreButton != null)
+            submitScoreButton.interactable = false;
+        if (skipButton != null)
+            skipButton.interactable = false;
+
+        int score = GameManager.Instance.Score;
+        LeaderboardManager.Instance.SubmitScore(nickname, score, (success) =>
+        {
+            TransitionToRestartPhase(success);
+        });
+    }
+
+    private void SkipSubmit()
+    {
+        PlayUIClick();
+        TransitionToRestartPhase(false);
+    }
+
+    private void TransitionToRestartPhase(bool wasSubmitted)
+    {
+        // Phase 1 숨기기
+        if (nicknameGroup != null)
+            nicknameGroup.SetActive(false);
+        if (skipButton != null)
+            skipButton.gameObject.SetActive(false);
+
+        // Phase 2 표시
+        if (submittedText != null)
+        {
+            submittedText.gameObject.SetActive(true);
+            submittedText.text = wasSubmitted ? "등록 완료!" : "";
+        }
+        if (restartButton != null)
+            restartButton.gameObject.SetActive(true);
+    }
+
+    // ===== 점수 & 캐릭터 =====
     private void UpdateScore(int score)
     {
         if (scoreText != null)
@@ -189,8 +720,6 @@ public class UIManager : MonoBehaviour
         if (data == null) return;
         if (nextCharacterImage != null)
             nextCharacterImage.sprite = data.characterSprite;
-        if (nextCharacterName != null)
-            nextCharacterName.text = data.characterName;
     }
 
     private void OnDestroy()

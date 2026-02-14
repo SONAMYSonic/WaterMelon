@@ -12,9 +12,7 @@ public class EvolutionEntry : MonoBehaviour
     [SerializeField] private Image characterImage;
     [SerializeField] private TextMeshProUGUI levelText;
 
-    // 레벨별 이미지 크기 범위
-    private const float MinImageSize = 50f;
-    private const float MaxImageSize = 110f;
+    private const float ImageSize = 110f;
 
     public void Setup(CharacterData data, int level, int maxLevel)
     {
@@ -23,12 +21,8 @@ public class EvolutionEntry : MonoBehaviour
             characterImage.sprite = data.characterSprite;
             characterImage.preserveAspect = true;
 
-            // 레벨에 비례하여 이미지 크기 결정
-            float t = maxLevel > 0 ? (float)level / maxLevel : 0f;
-            float imageSize = Mathf.Lerp(MinImageSize, MaxImageSize, t);
-
             RectTransform imgRT = characterImage.rectTransform;
-            imgRT.sizeDelta = new Vector2(imageSize, imageSize);
+            imgRT.sizeDelta = new Vector2(ImageSize, ImageSize);
         }
 
         if (levelText != null)

@@ -54,4 +54,14 @@ public class Character : MonoBehaviour
         IsDropped = true;
         SetKinematic(false);
     }
+
+    // 속도 제한 — 합체 충격 등으로 과일이 화면 밖으로 튕기는 것 방지
+    private const float MaxVelocity = 20f;
+
+    private void FixedUpdate()
+    {
+        if (!IsDropped || rb == null || rb.bodyType == RigidbodyType2D.Kinematic) return;
+        if (rb.linearVelocity.sqrMagnitude > MaxVelocity * MaxVelocity)
+            rb.linearVelocity = rb.linearVelocity.normalized * MaxVelocity;
+    }
 }

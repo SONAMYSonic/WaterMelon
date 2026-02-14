@@ -1,0 +1,1014 @@
+fileFormatVersion: 2
+guid: 2f630f0f8268dc54eb9ff2693d90674a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8132049607167749973
+    second: fes_match_ranking_parts_0
+  - first:
+      213: -5779386469297718189
+    second: fes_match_ranking_parts_1
+  - first:
+      213: -2257142757447111093
+    second: fes_match_ranking_parts_2
+  - first:
+      213: -3411306599164055580
+    second: fes_match_ranking_parts_3
+  - first:
+      213: -4305730591657603880
+    second: fes_match_ranking_parts_4
+  - first:
+      213: 4542003561604821132
+    second: fes_match_ranking_parts_5
+  - first:
+      213: -3236650164387369202
+    second: fes_match_ranking_parts_6
+  - first:
+      213: 2628207858978948413
+    second: fes_match_ranking_parts_7
+  - first:
+      213: -413555655131131020
+    second: fes_match_ranking_parts_8
+  - first:
+      213: 8280185395167987565
+    second: fes_match_ranking_parts_9
+  - first:
+      213: -6476600277392098536
+    second: fes_match_ranking_parts_10
+  - first:
+      213: 8821103581178549029
+    second: fes_match_ranking_parts_11
+  - first:
+      213: -1291736781606000306
+    second: fes_match_ranking_parts_12
+  - first:
+      213: 7201796304053443841
+    second: fes_match_ranking_parts_13
+  - first:
+      213: 446746292925067714
+    second: fes_match_ranking_parts_14
+  - first:
+      213: 4690680026584743221
+    second: fes_match_ranking_parts_15
+  - first:
+      213: -3749284410326916878
+    second: fes_match_ranking_parts_16
+  - first:
+      213: -115274478741235038
+    second: fes_match_ranking_parts_17
+  - first:
+      213: -3369856652813813454
+    second: fes_match_ranking_parts_18
+  - first:
+      213: 434197093666226571
+    second: fes_match_ranking_parts_19
+  - first:
+      213: 1717549238636329249
+    second: fes_match_ranking_parts_20
+  - first:
+      213: -4329746526355886029
+    second: fes_match_ranking_parts_21
+  - first:
+      213: -2844416742863041833
+    second: fes_match_ranking_parts_22
+  - first:
+      213: -8805034859755712914
+    second: fes_match_ranking_parts_23
+  - first:
+      213: 2808483897957863711
+    second: fes_match_ranking_parts_24
+  - first:
+      213: -6643462056419296478
+    second: fes_match_ranking_parts_25
+  - first:
+      213: 8192021365346289285
+    second: fes_match_ranking_parts_26
+  - first:
+      213: 4898734617016325062
+    second: fes_match_ranking_parts_27
+  - first:
+      213: -316724764672742508
+    second: fes_match_ranking_parts_28
+  - first:
+      213: -1770387255808509564
+    second: fes_match_ranking_parts_29
+  - first:
+      213: 6186481406485640378
+    second: fes_match_ranking_parts_30
+  - first:
+      213: -4993259864678779724
+    second: fes_match_ranking_parts_31
+  - first:
+      213: -6644805113095789215
+    second: fes_match_ranking_parts_32
+  - first:
+      213: -7384093926357517613
+    second: fes_match_ranking_parts_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 743
+        width: 880
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55fa6134808dad070800000000000000
+      internalID: 8132049607167749973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 618
+        width: 864
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35c7fcd60ae7bcfa0800000000000000
+      internalID: -5779386469297718189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 29
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ee407fe940da0e0800000000000000
+      internalID: -2257142757447111093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_3
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 495
+        width: 200
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ef61e0d8ba98a0d0800000000000000
+      internalID: -3411306599164055580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_4
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 594
+        width: 347
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dc47b1f6d8fe34c0800000000000000
+      internalID: -4305730591657603880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_5
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 472
+        width: 200
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80b30abc20780f30800000000000000
+      internalID: 4542003561604821132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_6
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 545
+        width: 105
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0f2b71f2db1513d0800000000000000
+      internalID: -3236650164387369202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_7
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 496
+        width: 200
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3584567f15497420800000000000000
+      internalID: 2628207858978948413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_8
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 570
+        width: 96
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4731e01a251c24af0800000000000000
+      internalID: -413555655131131020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_9
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 498
+        width: 104
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d678d512fb029e270800000000000000
+      internalID: 8280185395167987565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_10
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 520
+        width: 96
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81bf8d9bc5e7e16a0800000000000000
+      internalID: -6476600277392098536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_11
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 374
+        width: 194
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 523d21b88fada6a70800000000000000
+      internalID: 8821103581178549029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_12
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 350
+        width: 194
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e496115bd34d21ee0800000000000000
+      internalID: -1291736781606000306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_13
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 449
+        width: 104
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d93dfe49be1f360800000000000000
+      internalID: 7201796304053443841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_14
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 421
+        width: 152
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c1758ee269233600800000000000000
+      internalID: 446746292925067714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_15
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 468
+        width: 83
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d7a93c1a4a81140800000000000000
+      internalID: 4690680026584743221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_16
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 394
+        width: 151
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f0ed8081bdd7fbc0800000000000000
+      internalID: -3749284410326916878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_17
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 468
+        width: 96
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aad5fae876766ef0800000000000000
+      internalID: -115274478741235038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_18
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 402
+        width: 96
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 239bb018a3ddb31d0800000000000000
+      internalID: -3369856652813813454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_19
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 347
+        width: 152
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b818b7ac4f3960600800000000000000
+      internalID: 434197093666226571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_20
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 326
+        width: 103
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129392dbee5f5d710800000000000000
+      internalID: 1717549238636329249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_21
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 275
+        width: 152
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33073196976a9e3c0800000000000000
+      internalID: -4329746526355886029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_22
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 276
+        width: 151
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da8970fa0a9688d0800000000000000
+      internalID: -2844416742863041833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_23
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 350
+        width: 96
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e4455327b3ec580800000000000000
+      internalID: -8805034859755712914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_24
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 320
+        width: 151
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f11de27a93db9f620800000000000000
+      internalID: 2808483897957863711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_25
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 276
+        width: 96
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22b7750557eadc3a0800000000000000
+      internalID: -6643462056419296478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_26
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 299
+        width: 97
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58640e15708efa170800000000000000
+      internalID: 8192021365346289285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_27
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 227
+        width: 96
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3da28fd2dcbf340800000000000000
+      internalID: 4898734617016325062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_28
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 178
+        width: 96
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49bac1e2184ca9bf0800000000000000
+      internalID: -316724764672742508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_29
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 227
+        width: 96
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 489b7a6bb225e67e0800000000000000
+      internalID: -1770387255808509564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_30
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 129
+        width: 96
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab4b223df0ccad550800000000000000
+      internalID: 6186481406485640378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_31
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 80
+        width: 96
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b43b96cb9064bab0800000000000000
+      internalID: -4993259864678779724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 20
+        width: 96
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165e93094f8e8c3a0800000000000000
+      internalID: -6644805113095789215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fes_match_ranking_parts_33
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 31
+        width: 96
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da375352bd668990800000000000000
+      internalID: -7384093926357517613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fes_match_ranking_parts_0: 8132049607167749973
+      fes_match_ranking_parts_1: -5779386469297718189
+      fes_match_ranking_parts_10: -6476600277392098536
+      fes_match_ranking_parts_11: 8821103581178549029
+      fes_match_ranking_parts_12: -1291736781606000306
+      fes_match_ranking_parts_13: 7201796304053443841
+      fes_match_ranking_parts_14: 446746292925067714
+      fes_match_ranking_parts_15: 4690680026584743221
+      fes_match_ranking_parts_16: -3749284410326916878
+      fes_match_ranking_parts_17: -115274478741235038
+      fes_match_ranking_parts_18: -3369856652813813454
+      fes_match_ranking_parts_19: 434197093666226571
+      fes_match_ranking_parts_2: -2257142757447111093
+      fes_match_ranking_parts_20: 1717549238636329249
+      fes_match_ranking_parts_21: -4329746526355886029
+      fes_match_ranking_parts_22: -2844416742863041833
+      fes_match_ranking_parts_23: -8805034859755712914
+      fes_match_ranking_parts_24: 2808483897957863711
+      fes_match_ranking_parts_25: -6643462056419296478
+      fes_match_ranking_parts_26: 8192021365346289285
+      fes_match_ranking_parts_27: 4898734617016325062
+      fes_match_ranking_parts_28: -316724764672742508
+      fes_match_ranking_parts_29: -1770387255808509564
+      fes_match_ranking_parts_3: -3411306599164055580
+      fes_match_ranking_parts_30: 6186481406485640378
+      fes_match_ranking_parts_31: -4993259864678779724
+      fes_match_ranking_parts_32: -6644805113095789215
+      fes_match_ranking_parts_33: -7384093926357517613
+      fes_match_ranking_parts_4: -4305730591657603880
+      fes_match_ranking_parts_5: 4542003561604821132
+      fes_match_ranking_parts_6: -3236650164387369202
+      fes_match_ranking_parts_7: 2628207858978948413
+      fes_match_ranking_parts_8: -413555655131131020
+      fes_match_ranking_parts_9: 8280185395167987565
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

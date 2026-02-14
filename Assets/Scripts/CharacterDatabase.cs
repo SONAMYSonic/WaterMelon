@@ -69,12 +69,15 @@ public class CharacterDatabase : ScriptableObject
 
     /// <summary>
     /// 레벨에 따른 반지름 계산
+    /// 레벨 4 이상부터 가속적으로 커지는 커브 적용
     /// </summary>
     public float GetRadius(int level)
     {
         if (MaxLevel <= 0) return minRadius;
         float t = (float)level / MaxLevel;
-        return Mathf.Lerp(minRadius, maxRadius, t);
+        // t를 제곱하여 후반 레벨이 더 급격히 커지게
+        float curved = t * t;
+        return Mathf.Lerp(minRadius, maxRadius, curved);
     }
 
     /// <summary>

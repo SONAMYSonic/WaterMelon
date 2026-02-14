@@ -14,6 +14,10 @@ public class AudioManager : MonoBehaviour
     public AudioClip dropClip;
     public AudioClip gameOverClip;
 
+    [Header("UI SFX")]
+    public AudioClip uiClickClip;
+    public AudioClip uiCloseClip;
+
     [Header("BGM")]
     public AudioClip bgmClip;
 
@@ -21,6 +25,11 @@ public class AudioManager : MonoBehaviour
     [Range(0f, 1f)] public float sfxVolume = 1f;
     [Range(0f, 1f)] public float voiceVolume = 1f;
     [Range(0f, 1f)] public float bgmVolume = 0.5f;
+
+    // 볼륨 getter (UI 초기화용)
+    public float BGMVolume => bgmVolume;
+    public float SFXVolume => sfxVolume;
+    public float VoiceVolume => voiceVolume;
 
     private void Awake()
     {
@@ -30,6 +39,11 @@ public class AudioManager : MonoBehaviour
             return;
         }
         Instance = this;
+
+        // 저장된 볼륨 설정 불러오기
+        bgmVolume = PlayerPrefs.GetFloat("BGMVolume", 0.5f);
+        sfxVolume = PlayerPrefs.GetFloat("SFXVolume", 1f);
+        voiceVolume = PlayerPrefs.GetFloat("VoiceVolume", 1f);
     }
 
     private void Start()
@@ -70,5 +84,36 @@ public class AudioManager : MonoBehaviour
     {
         PlaySFX(mergeSfx);
         PlayVoice(voiceClip);
+    }
+
+    public void PlayUIClick()
+    {
+        PlaySFX(uiClickClip);
+    }
+
+    public void PlayUIClose()
+    {
+        PlaySFX(uiCloseClip);
+    }
+
+    // 볼륨 설정 (슬라이더 콜백)
+    public void SetBGMVolume(float volume)
+    {
+        bgmVolume = Mathf.Clamp01(volume);
+        if (bgmSource != null)
+            bgmSource.volume = bgmVolume;
+        PlayerPrefs.SetFloat("BGMVolume", bgmVolume);
+    }
+
+    public void SetSFXVolume(float volume)
+    {
+        sfxVolume = Mathf.Clamp01(volume);
+        PlayerPrefs.SetFloat("SFXVolume", sfxVolume);
+    }
+
+    public void SetVoiceVolume(float volume)
+    {
+        voiceVolume = Mathf.Clamp01(volume);
+        PlayerPrefs.SetFloat("VoiceVolume", voiceVolume);
     }
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
@@ -27,6 +28,8 @@ public class GameManager : MonoBehaviour
     public int Score { get; private set; }
     public int HighScore { get; private set; }
     public bool IsGameOver { get; private set; }
+    public bool IsPaused { get; private set; }
+    public bool HasDroppedAny { get; private set; }
 
     private Character currentCharacter;
     private int nextCharacterLevel;
@@ -73,6 +76,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         if (IsGameOver) return;
+        if (IsPaused) return;
         HandleInput();
         UpdateCurrentCharacterPosition();
     }
@@ -99,6 +103,9 @@ public class GameManager : MonoBehaviour
     {
         if (currentCharacter == null || !canDrop) return;
 
+        // UI 위에 포인터가 있으면 게임 입력 무시
+        if (IsPointerOverUI()) return;
+
         Vector2 screenPos = GetPointerScreenPosition();
         Vector3 worldPos = Camera.main.ScreenToWorldPoint(
             new Vector3(screenPos.x, screenPos.y, 0f));
@@ -109,6 +116,19 @@ public class GameManager : MonoBehaviour
         {
             DropCharacter();
         }
+    }
+
+    private bool IsPointerOverUI()
+    {
+        if (EventSystem.current == null) return false;
+
+        // 터치 입력
+        if (touchscreen != null && touchscreen.primaryTouch.press.isPressed)
+            return EventSystem.current.IsPointerOverGameObject(
+                touchscreen.primaryTouch.touchId.ReadValue());
+
+        // 마우스 입력
+        return EventSystem.current.IsPointerOverGameObject(-1);
     }
 
     private void UpdateCurrentCharacterPosition()
@@ -145,6 +165,7 @@ public class GameManager : MonoBehaviour
     {
         if (currentCharacter == null) return;
 
+        HasDroppedAny = true;
         canDrop = false;
         currentCharacter.gameObject.layer = LayerMask.NameToLayer("Default");
         currentCharacter.Drop();
@@ -195,6 +216,14 @@ public class GameManager : MonoBehaviour
         newChar.Initialize(newData, newLevel, characterDB.GetRadius(newLevel));
         newChar.IsDropped = true;
         newChar.gameObject.layer = LayerMask.NameToLayer("Default");
+
+        // 합체로 생성된 캐릭터의 초기 속도를 0으로 (튕김 방지)
+        var newRb = go.GetComponent<Rigidbody2D>();
+        if (newRb != null)
+        {
+            newRb.linearVelocity = Vector2.zero;
+            newRb.angularVelocity = 0f;
+        }
     }
 
     private void SpawnMergeEffect(Vector3 position, CharacterData data, int level)
@@ -222,6 +251,8 @@ public class GameManager : MonoBehaviour
     {
         if (IsGameOver) return;
         IsGameOver = true;
+        IsPaused = false;
+        Time.timeScale = 1f;
         if (AudioManager.Instance != null)
             AudioManager.Instance.PlayGameOver();
         OnGameOver?.Invoke();
@@ -229,7 +260,82 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void SetPaused(bool paused)
+    {
+        if (IsGameOver) return;
+        IsPaused = paused;
+        Time.timeScale = paused ? 0f : 1f;
+    }
+
+    /// <summary>
+    /// 캐릭터만 리롤 (과일이 아직 드롭되지 않았을 때)
+    /// </summary>
+    public void RerollCharacters()
+    {
+        // 현재 들고 있는 캐릭터 파괴
+        if (currentCharacter != null)
+        {
+            Destroy(currentCharacter.gameObject);
+            currentCharacter = null;
+        }
+
+        // 리롤
+        characterDB.SelectRandomCharacters();
+        OnCharactersSelected?.Invoke();
+
+        // 다시 준비
+        PrepareNextDrop();
+        SpawnCurrentCharacter();
+    }
+
+    /// <summary>
+    /// 소프트 리스타트: 모든 과일 파괴 + 점수 리셋 + 캐릭터 리롤 (씬 리로드 없음)
+    /// </summary>
+    public void SoftRestart()
+    {
+        // 대기 중인 스폰 취소
+        CancelInvoke(nameof(SpawnAfterDelay));
+
+        // 현재 들고 있는 캐릭터 파괴
+        if (currentCharacter != null)
+        {
+            Destroy(currentCharacter.gameObject);
+            currentCharacter = null;
+        }
+
+        // 컨테이너 안의 모든 캐릭터 파괴
+        if (containerParent != null)
+        {
+            for (int i = containerParent.childCount - 1; i >= 0; i--)
+            {
+                Transform child = containerParent.GetChild(i);
+                if (child.GetComponent<Character>() != null)
+                {
+                    Destroy(child.gameObject);
+                }
+            }
+        }
+
+        // 점수 리셋
+        Score = 0;
+        OnScoreChanged?.Invoke(Score);
+
+        // 상태 리셋
+        HasDroppedAny = false;
+        canDrop = true;
+        IsGameOver = false;
+        IsPaused = false;
+        Time.timeScale = 1f;
+
+        // 리롤 + 리스폰
+        characterDB.SelectRandomCharacters();
+        OnCharactersSelected?.Invoke();
+        PrepareNextDrop();
+        SpawnCurrentCharacter();
     }
 
     private void OnDrawGizmos()
