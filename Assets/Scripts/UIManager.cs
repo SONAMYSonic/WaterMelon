@@ -67,6 +67,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Button confirmRefreshYesBtn;
     [SerializeField] private Button confirmRefreshNoBtn;
 
+    [Header("MAX 합체 축하")]
+    [SerializeField] private GameObject maxCelebrateObject;
+
     private Coroutine cooldownCoroutine;
 
     private void Start()
@@ -75,6 +78,10 @@ public class UIManager : MonoBehaviour
         if (gameOverPanel != null)
             gameOverPanel.SetActive(false);
 
+        // MAX 합체 축하 오브젝트 초기 비활성화
+        if (maxCelebrateObject != null)
+            maxCelebrateObject.SetActive(false);
+
         if (GameManager.Instance != null)
         {
             GameManager.Instance.OnScoreChanged += UpdateScore;
@@ -82,6 +89,7 @@ public class UIManager : MonoBehaviour
             GameManager.Instance.OnNextCharacterChanged += UpdateNextCharacter;
             GameManager.Instance.OnGameOver += ShowGameOver;
             GameManager.Instance.OnCharactersSelected += BuildEvolutionChart;
+            GameManager.Instance.OnMaxMerge += ShowMaxMergeCelebration;
         }
 
         if (restartButton != null)
@@ -695,6 +703,71 @@ public class UIManager : MonoBehaviour
             nextCharacterImage.sprite = data.characterSprite;
     }
 
+    // ===== MAX 합체 축하 =====
+    private void ShowMaxMergeCelebration(Vector3 worldPos)
+    {
+        StartCoroutine(MaxMergeCelebrationRoutine());
+    }
+
+    private IEnumerator MaxMergeCelebrationRoutine()
+    {
+        if (maxCelebrateObject == null) yield break;
+
+        maxCelebrateObject.SetActive(true);
+        var rt = maxCelebrateObject.GetComponent<RectTransform>();
+        var img = maxCelebrateObject.GetComponent<Image>();
+        Color originalColor = img != null ? img.color : Color.white;
+
+        rt.localScale = Vector3.zero;
+        if (img != null) img.color = originalColor;
+
+        // Phase 1: 튀어나오기 (0 → 1.2 스케일, 0.3초) — ease-out
+        float duration1 = 0.3f;
+        float elapsed = 0f;
+        while (elapsed < duration1)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            float t = Mathf.Clamp01(elapsed / duration1);
+            float scale = 1.2f * Mathf.Sin(t * Mathf.PI * 0.5f);
+            rt.localScale = Vector3.one * scale;
+            yield return null;
+        }
+
+        // Phase 2: 바운스 복귀 (1.2 → 1.0, 0.15초)
+        float duration2 = 0.15f;
+        elapsed = 0f;
+        while (elapsed < duration2)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            float t = Mathf.Clamp01(elapsed / duration2);
+            float scale = Mathf.Lerp(1.2f, 1f, t);
+            rt.localScale = Vector3.one * scale;
+            yield return null;
+        }
+        rt.localScale = Vector3.one;
+
+        // Phase 3: 유지 (1.5초)
+        yield return new WaitForSecondsRealtime(1.5f);
+
+        // Phase 4: 페이드아웃 + 축소 (0.4초)
+        float duration4 = 0.4f;
+        elapsed = 0f;
+        while (elapsed < duration4)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            float t = Mathf.Clamp01(elapsed / duration4);
+            rt.localScale = Vector3.one * Mathf.Lerp(1f, 0.5f, t);
+            if (img != null)
+                img.color = new Color(originalColor.r, originalColor.g, originalColor.b, 1f - t);
+            yield return null;
+        }
+
+        // 원래 상태 복원 후 비활성화
+        rt.localScale = Vector3.one;
+        if (img != null) img.color = originalColor;
+        maxCelebrateObject.SetActive(false);
+    }
+
     private void OnDestroy()
     {
         if (GameManager.Instance != null)
@@ -704,6 +777,7 @@ public class UIManager : MonoBehaviour
             GameManager.Instance.OnNextCharacterChanged -= UpdateNextCharacter;
             GameManager.Instance.OnGameOver -= ShowGameOver;
             GameManager.Instance.OnCharactersSelected -= BuildEvolutionChart;
+            GameManager.Instance.OnMaxMerge -= ShowMaxMergeCelebration;
         }
     }
 }

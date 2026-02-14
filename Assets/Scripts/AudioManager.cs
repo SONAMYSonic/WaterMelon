@@ -18,6 +18,10 @@ public class AudioManager : MonoBehaviour
     public AudioClip uiClickClip;
     public AudioClip uiCloseClip;
 
+    [Header("Celebration")]
+    public AudioClip celebrationClip;
+    public AudioClip clapClip;
+
     [Header("BGM")]
     public AudioClip bgmClip;
 
@@ -94,6 +98,14 @@ public class AudioManager : MonoBehaviour
     public void PlayUIClose()
     {
         PlaySFX(uiCloseClip);
+    }
+
+    public void PlayCelebration()
+    {
+        if (celebrationClip != null)
+            sfxSource.PlayOneShot(celebrationClip, sfxVolume);
+        if (clapClip != null)
+            sfxSource.PlayOneShot(clapClip, sfxVolume);
     }
 
     // 볼륨 설정 (슬라이더 콜백)

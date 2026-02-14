@@ -42,7 +42,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 160c0743c0f419f4880b6f48b639676f, type: 2}
   - {fileID: 11400000, guid: 8e053a20bef76c94f8d39cb1303c0231, type: 2}
   levelCount: 11
-  minRadius: 0.35
-  maxRadius: 1.7
+  minRadius: 0.2
+  maxRadius: 1.5
   baseScore: 10
   scorePerLevel: 10
+  maxMergeBonus: 500

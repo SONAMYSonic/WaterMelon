@@ -1,0 +1,2073 @@
+fileFormatVersion: 2
+guid: 35a39d2e53995114cb17f129304ab0ab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2110865237692935322
+    second: LiveApealUI_0
+  - first:
+      213: 514708899150333554
+    second: LiveApealUI_1
+  - first:
+      213: 178078578190513980
+    second: LiveApealUI_2
+  - first:
+      213: -146153404357577128
+    second: LiveApealUI_3
+  - first:
+      213: -7944011553218204401
+    second: LiveApealUI_4
+  - first:
+      213: 1186112623009105851
+    second: LiveApealUI_5
+  - first:
+      213: -6451380739152462989
+    second: LiveApealUI_6
+  - first:
+      213: -2499086001259133180
+    second: LiveApealUI_7
+  - first:
+      213: 5099722067822306259
+    second: LiveApealUI_8
+  - first:
+      213: 3147149306402108967
+    second: LiveApealUI_9
+  - first:
+      213: 7761193622563553512
+    second: LiveApealUI_10
+  - first:
+      213: 7816120521426741877
+    second: LiveApealUI_11
+  - first:
+      213: -3572322756734543027
+    second: LiveApealUI_12
+  - first:
+      213: -8985910353963872765
+    second: LiveApealUI_13
+  - first:
+      213: 5306401759179828953
+    second: LiveApealUI_14
+  - first:
+      213: -6060564506933812599
+    second: LiveApealUI_15
+  - first:
+      213: 7340891347951450764
+    second: LiveApealUI_16
+  - first:
+      213: -99841396966451738
+    second: LiveApealUI_17
+  - first:
+      213: -8271203641982987213
+    second: LiveApealUI_18
+  - first:
+      213: -6414470388994535069
+    second: LiveApealUI_19
+  - first:
+      213: -2266106957592991757
+    second: LiveApealUI_20
+  - first:
+      213: -7530078799212994684
+    second: LiveApealUI_21
+  - first:
+      213: -839281683178720602
+    second: LiveApealUI_22
+  - first:
+      213: 3296035118349835937
+    second: LiveApealUI_23
+  - first:
+      213: -7716855446098581321
+    second: LiveApealUI_24
+  - first:
+      213: -6407573658163350156
+    second: LiveApealUI_25
+  - first:
+      213: -4311866602463820464
+    second: LiveApealUI_26
+  - first:
+      213: -2358163414363439233
+    second: LiveApealUI_27
+  - first:
+      213: -6059764172465322547
+    second: LiveApealUI_28
+  - first:
+      213: 5535745406727223557
+    second: LiveApealUI_29
+  - first:
+      213: 5020398440735448908
+    second: LiveApealUI_30
+  - first:
+      213: -1233401942534486646
+    second: LiveApealUI_31
+  - first:
+      213: 1689103163575611817
+    second: LiveApealUI_32
+  - first:
+      213: 7778609437436493202
+    second: LiveApealUI_33
+  - first:
+      213: -5682535773028451807
+    second: LiveApealUI_34
+  - first:
+      213: 3460371360053823393
+    second: LiveApealUI_35
+  - first:
+      213: 1551168468774790213
+    second: LiveApealUI_36
+  - first:
+      213: 6880191712946927046
+    second: LiveApealUI_37
+  - first:
+      213: -3905107964346841623
+    second: LiveApealUI_38
+  - first:
+      213: -6355184603293369045
+    second: LiveApealUI_39
+  - first:
+      213: -8591753751414215244
+    second: LiveApealUI_40
+  - first:
+      213: -7103553899936874432
+    second: LiveApealUI_41
+  - first:
+      213: 8217931792045744484
+    second: LiveApealUI_42
+  - first:
+      213: -1929475797822563516
+    second: LiveApealUI_43
+  - first:
+      213: -3395119694964991936
+    second: LiveApealUI_44
+  - first:
+      213: 3603054571388200679
+    second: LiveApealUI_45
+  - first:
+      213: 5541116805681461069
+    second: LiveApealUI_46
+  - first:
+      213: -1249053956845354482
+    second: LiveApealUI_47
+  - first:
+      213: 468862754537896344
+    second: LiveApealUI_48
+  - first:
+      213: -3529607216933953353
+    second: LiveApealUI_49
+  - first:
+      213: -2225991527012275709
+    second: LiveApealUI_50
+  - first:
+      213: -4619177964479866569
+    second: LiveApealUI_51
+  - first:
+      213: 8185746492444011912
+    second: LiveApealUI_52
+  - first:
+      213: -2734497072052015121
+    second: LiveApealUI_53
+  - first:
+      213: 965308792774448335
+    second: LiveApealUI_54
+  - first:
+      213: 5800780851513344877
+    second: LiveApealUI_55
+  - first:
+      213: -1655965747134277362
+    second: LiveApealUI_56
+  - first:
+      213: 8058512218052485018
+    second: LiveApealUI_57
+  - first:
+      213: 8674876127031337875
+    second: LiveApealUI_58
+  - first:
+      213: 3774084882224391549
+    second: LiveApealUI_59
+  - first:
+      213: 8141913969000553826
+    second: LiveApealUI_60
+  - first:
+      213: -6821303061870529843
+    second: LiveApealUI_61
+  - first:
+      213: 8134945910228933300
+    second: LiveApealUI_62
+  - first:
+      213: 5968757121272248886
+    second: LiveApealUI_63
+  - first:
+      213: 1611515361764015735
+    second: LiveApealUI_64
+  - first:
+      213: -441515125736240333
+    second: LiveApealUI_65
+  - first:
+      213: -4100675632000699296
+    second: LiveApealUI_66
+  - first:
+      213: -4439807652827850997
+    second: LiveApealUI_67
+  - first:
+      213: -2948491828469024372
+    second: LiveApealUI_68
+  - first:
+      213: -4620656269995017170
+    second: LiveApealUI_69
+  - first:
+      213: 3408686913240482904
+    second: LiveApealUI_70
+  - first:
+      213: -4116251144935666021
+    second: LiveApealUI_71
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LiveApealUI_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1216
+        width: 1136
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 663979a0043b4b2e0800000000000000
+      internalID: -2110865237692935322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_1
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 1286
+        width: 244
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2768698440d942700800000000000000
+      internalID: 514708899150333554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1046
+        width: 1136
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c37f62bf589a87200800000000000000
+      internalID: 178078578190513980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_3
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 1176
+        width: 219
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8567d8ac042c8fdf0800000000000000
+      internalID: -146153404357577128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_4
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 1158
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d64ded49331c190800000000000000
+      internalID: -7944011553218204401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_5
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 1091
+        width: 197
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb78016752be57010800000000000000
+      internalID: 1186112623009105851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_6
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 1084
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b350c06671876a0800000000000000
+      internalID: -6451380739152462989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_7
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 1077
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4074cc7c586715dd0800000000000000
+      internalID: -2499086001259133180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_8
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 1077
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3e4c1833ad5c640800000000000000
+      internalID: 5099722067822306259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 876
+        width: 1136
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 726f63fae9becab20800000000000000
+      internalID: 3147149306402108967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_10
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 977
+        width: 190
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e08de9aa7c45bb60800000000000000
+      internalID: 7761193622563553512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_11
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 904
+        width: 241
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a2841e330787c60800000000000000
+      internalID: 7816120521426741877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 706
+        width: 1137
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4b1bc5316f8c6ec0800000000000000
+      internalID: -3572322756734543027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_13
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 829
+        width: 243
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e8a787422ab4380800000000000000
+      internalID: -8985910353963872765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_14
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 755
+        width: 138
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9deeb63194024a940800000000000000
+      internalID: 5306401759179828953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_15
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 755
+        width: 73
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 982aed1f0bc84eba0800000000000000
+      internalID: -6060564506933812599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_16
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 808
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8a726989c510e560800000000000000
+      internalID: 7340891347951450764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_17
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 770
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e59fe747ca4d9ef0800000000000000
+      internalID: -99841396966451738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_18
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 772
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 334dfae3c18c63d80800000000000000
+      internalID: -8271203641982987213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 536
+        width: 1137
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36118b1aa293bf6a0800000000000000
+      internalID: -6414470388994535069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_20
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 688
+        width: 164
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7e0a97abb2d80e0800000000000000
+      internalID: -2266106957592991757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_21
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 623
+        width: 164
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48f953a6a39cf7790800000000000000
+      internalID: -7530078799212994684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_22
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 561
+        width: 162
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a2f3af71c54a54f0800000000000000
+      internalID: -839281683178720602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 366
+        width: 1136
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae547c1a7eddbd20800000000000000
+      internalID: 3296035118349835937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_24
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 499
+        width: 162
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b861408bd838e490800000000000000
+      internalID: -7716855446098581321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_25
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 437
+        width: 162
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 475f509e4b9b317a0800000000000000
+      internalID: -6407573658163350156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_26
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 375
+        width: 162
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05506499b2c2924c0800000000000000
+      internalID: -4311866602463820464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_27
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 186
+        width: 436
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7f7b846ede164fd0800000000000000
+      internalID: -2358163414363439233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_28
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 351
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc5c095579467eba0800000000000000
+      internalID: -6059764172465322547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_29
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 354
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 509f9f62e1be2dc40800000000000000
+      internalID: 5535745406727223557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_30
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 355
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f16fa58c90ca540800000000000000
+      internalID: 5020398440735448908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_31
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 356
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8584f5d77312eee0800000000000000
+      internalID: -1233401942534486646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_32
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 356
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a1b9e5c066e07710800000000000000
+      internalID: 1689103163575611817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_33
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 355
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d37ec021c23fb60800000000000000
+      internalID: 7778609437436493202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_34
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 354
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12a703162d39321b0800000000000000
+      internalID: -5682535773028451807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_35
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 352
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a781fa0b65b50030800000000000000
+      internalID: 3460371360053823393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_36
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 330
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 544ab10018bd68510800000000000000
+      internalID: 1551168468774790213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_37
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 254
+        width: 293
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c5b9ccf8e95b7f50800000000000000
+      internalID: 6880191712946927046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_38
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 313
+        width: 162
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5ce8f1ff44ec9c0800000000000000
+      internalID: -3905107964346841623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_39
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 347
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2dbaa64649ddc7a0800000000000000
+      internalID: -6355184603293369045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_40
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 350
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd6351fb75f3c880800000000000000
+      internalID: -8591753751414215244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_41
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 339
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0400c6f3d5b1b6d90800000000000000
+      internalID: -7103553899936874432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_42
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 343
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 461a645ac65fb0270800000000000000
+      internalID: 8217931792045744484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_43
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 197
+        width: 368
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b92141cff1935e0800000000000000
+      internalID: -1929475797822563516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_44
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 334
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048dda320ac12e0d0800000000000000
+      internalID: -3395119694964991936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 301
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e6e0f9fa0f900230800000000000000
+      internalID: 3603054571388200679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_46
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 216
+        width: 273
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d47379d606006ec40800000000000000
+      internalID: 5541116805681461069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_47
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 189
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e02cfe44b087aaee0800000000000000
+      internalID: -1249053956845354482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_48
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 191
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89974ace03cb18600800000000000000
+      internalID: 468862754537896344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_49
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 195
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b02ff5dfe0540fc0800000000000000
+      internalID: -3529607216933953353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_50
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 153
+        width: 284
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30a676fff70bb11e0800000000000000
+      internalID: -2225991527012275709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_51
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 122
+        width: 259
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7399dd06d1265efb0800000000000000
+      internalID: -4619177964479866569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_52
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 188
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d668f901d999170800000000000000
+      internalID: 8185746492444011912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_53
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 184
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef6ef4a66d1d0ad0800000000000000
+      internalID: -2734497072052015121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_54
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 184
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc4d1eb8b37756d00800000000000000
+      internalID: 965308792774448335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_55
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 187
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63475a5373808050800000000000000
+      internalID: 5800780851513344877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_56
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 55
+        width: 364
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e09d8d93de3d409e0800000000000000
+      internalID: -1655965747134277362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_57
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 182
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9fd92f9a2695df60800000000000000
+      internalID: 8058512218052485018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_58
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 179
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 393283640e9536870800000000000000
+      internalID: 8674876127031337875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_59
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 178
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d752825543e306430800000000000000
+      internalID: 3774084882224391549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_60
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 178
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26d911afd93edf070800000000000000
+      internalID: 8141913969000553826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_61
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 179
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc23ceb810dd551a0800000000000000
+      internalID: -6821303061870529843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_62
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 181
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba563e543225e070800000000000000
+      internalID: 8134945910228933300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_63
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 176
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63af30c5af845d250800000000000000
+      internalID: 5968757121272248886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_64
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 176
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e7700fea04d5610800000000000000
+      internalID: 1611515361764015735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_65
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 176
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b8787155c6fd9f0800000000000000
+      internalID: -441515125736240333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_66
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 45
+        width: 368
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0647f7f2d397717c0800000000000000
+      internalID: -4100675632000699296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_67
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 85
+        width: 255
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07922e7672a262c0800000000000000
+      internalID: -4439807652827850997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_68
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 122
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8936f4cd4ad417d0800000000000000
+      internalID: -2948491828469024372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_69
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 77
+        width: 84
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2cf3cd8a9120efb0800000000000000
+      internalID: -4620656269995017170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_70
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 103
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 854c83600b61e4f20800000000000000
+      internalID: 3408686913240482904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_71
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 57
+        width: 127
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e80db746320e6c0800000000000000
+      internalID: -4116251144935666021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_72
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3
+        width: 120
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c4a1d2a65e85e4f82977718940afd1
+      internalID: -1772102019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_73
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 17
+        width: 258
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1360c165e43cbe8459c42886c3c43c9b
+      internalID: -2046869978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LiveApealUI_74
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 15
+        width: 162
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af466c0630fe1bc4189d0b0652376cdd
+      internalID: -430297367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: dc5dbf8c2d4c4c748b4981c606fa3e86
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      LiveApealUI_0: -2110865237692935322
+      LiveApealUI_1: 514708899150333554
+      LiveApealUI_10: 7761193622563553512
+      LiveApealUI_11: 7816120521426741877
+      LiveApealUI_12: -3572322756734543027
+      LiveApealUI_13: -8985910353963872765
+      LiveApealUI_14: 5306401759179828953
+      LiveApealUI_15: -6060564506933812599
+      LiveApealUI_16: 7340891347951450764
+      LiveApealUI_17: -99841396966451738
+      LiveApealUI_18: -8271203641982987213
+      LiveApealUI_19: -6414470388994535069
+      LiveApealUI_2: 178078578190513980
+      LiveApealUI_20: -2266106957592991757
+      LiveApealUI_21: -7530078799212994684
+      LiveApealUI_22: -839281683178720602
+      LiveApealUI_23: 3296035118349835937
+      LiveApealUI_24: -7716855446098581321
+      LiveApealUI_25: -6407573658163350156
+      LiveApealUI_26: -4311866602463820464
+      LiveApealUI_27: -2358163414363439233
+      LiveApealUI_28: -6059764172465322547
+      LiveApealUI_29: 5535745406727223557
+      LiveApealUI_3: -146153404357577128
+      LiveApealUI_30: 5020398440735448908
+      LiveApealUI_31: -1233401942534486646
+      LiveApealUI_32: 1689103163575611817
+      LiveApealUI_33: 7778609437436493202
+      LiveApealUI_34: -5682535773028451807
+      LiveApealUI_35: 3460371360053823393
+      LiveApealUI_36: 1551168468774790213
+      LiveApealUI_37: 6880191712946927046
+      LiveApealUI_38: -3905107964346841623
+      LiveApealUI_39: -6355184603293369045
+      LiveApealUI_4: -7944011553218204401
+      LiveApealUI_40: -8591753751414215244
+      LiveApealUI_41: -7103553899936874432
+      LiveApealUI_42: 8217931792045744484
+      LiveApealUI_43: -1929475797822563516
+      LiveApealUI_44: -3395119694964991936
+      LiveApealUI_45: 3603054571388200679
+      LiveApealUI_46: 5541116805681461069
+      LiveApealUI_47: -1249053956845354482
+      LiveApealUI_48: 468862754537896344
+      LiveApealUI_49: -3529607216933953353
+      LiveApealUI_5: 1186112623009105851
+      LiveApealUI_50: -2225991527012275709
+      LiveApealUI_51: -4619177964479866569
+      LiveApealUI_52: 8185746492444011912
+      LiveApealUI_53: -2734497072052015121
+      LiveApealUI_54: 965308792774448335
+      LiveApealUI_55: 5800780851513344877
+      LiveApealUI_56: -1655965747134277362
+      LiveApealUI_57: 8058512218052485018
+      LiveApealUI_58: 8674876127031337875
+      LiveApealUI_59: 3774084882224391549
+      LiveApealUI_6: -6451380739152462989
+      LiveApealUI_60: 8141913969000553826
+      LiveApealUI_61: -6821303061870529843
+      LiveApealUI_62: 8134945910228933300
+      LiveApealUI_63: 5968757121272248886
+      LiveApealUI_64: 1611515361764015735
+      LiveApealUI_65: -441515125736240333
+      LiveApealUI_66: -4100675632000699296
+      LiveApealUI_67: -4439807652827850997
+      LiveApealUI_68: -2948491828469024372
+      LiveApealUI_69: -4620656269995017170
+      LiveApealUI_7: -2499086001259133180
+      LiveApealUI_70: 3408686913240482904
+      LiveApealUI_71: -4116251144935666021
+      LiveApealUI_72: -1772102019
+      LiveApealUI_73: -2046869978
+      LiveApealUI_74: -430297367
+      LiveApealUI_8: 5099722067822306259
+      LiveApealUI_9: 3147149306402108967
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

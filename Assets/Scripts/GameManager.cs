@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
     public System.Action<int> OnHighScoreChanged;
     public System.Action<int> OnNextCharacterChanged;
     public System.Action OnGameOver;
+    public System.Action<Vector3> OnMaxMerge;
 
     private void Awake()
     {
@@ -187,7 +188,25 @@ public class GameManager : MonoBehaviour
     {
         if (a.HasMerged || b.HasMerged) return;
         if (a.Level != b.Level) return;
-        if (a.Level >= characterDB.MaxLevel) return;
+        if (a.Level >= characterDB.MaxLevel)
+        {
+            // MAX 합체 축하 이벤트
+            a.HasMerged = true;
+            b.HasMerged = true;
+            Vector3 maxPos = (a.transform.position + b.transform.position) / 2f;
+
+            AddScore(characterDB.maxMergeBonus);
+            SpawnMergeEffect(maxPos, characterDB.GetCharacter(a.Level), a.Level, true);
+
+            if (AudioManager.Instance != null)
+                AudioManager.Instance.PlayCelebration();
+
+            Destroy(a.gameObject);
+            Destroy(b.gameObject);
+
+            OnMaxMerge?.Invoke(maxPos);
+            return;
+        }
 
         a.HasMerged = true;
         b.HasMerged = true;
@@ -226,13 +245,19 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void SpawnMergeEffect(Vector3 position, CharacterData data, int level)
+    private void SpawnMergeEffect(Vector3 position, CharacterData data, int level, bool isBig = false)
     {
         if (mergeEffectPrefab == null) return;
         GameObject fx = Instantiate(mergeEffectPrefab, position, Quaternion.identity);
         MergeEffect effect = fx.GetComponent<MergeEffect>();
         if (effect != null)
-            effect.Play(position, data.mergeEffectColor, characterDB.GetRadius(level) * 2f);
+        {
+            float size = characterDB.GetRadius(level) * 2f;
+            if (isBig)
+                effect.PlayBig(position, data.mergeEffectColor, size);
+            else
+                effect.Play(position, data.mergeEffectColor, size);
+        }
     }
 
     public void AddScore(int points)
@@ -336,6 +361,23 @@ public class GameManager : MonoBehaviour
         OnCharactersSelected?.Invoke();
         PrepareNextDrop();
         SpawnCurrentCharacter();
+    }
+
+    /// <summary>
+    /// 디버그용: 캐릭터 없이 MAX 합체 축하 이벤트 발동
+    /// </summary>
+    public void TriggerMaxMergeCelebration()
+    {
+        Vector3 pos = Vector3.zero;
+        CharacterData data = characterDB.GetCharacter(characterDB.MaxLevel);
+
+        AddScore(characterDB.maxMergeBonus);
+        SpawnMergeEffect(pos, data, characterDB.MaxLevel, true);
+
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.PlayCelebration();
+
+        OnMaxMerge?.Invoke(pos);
     }
 
     private void OnDrawGizmos()

@@ -22,6 +22,9 @@ public class CharacterDatabase : ScriptableObject
     [Tooltip("레벨당 점수 증가량")]
     public int scorePerLevel = 10;
 
+    [Tooltip("최종 합체 보너스 점수")]
+    public int maxMergeBonus = 500;
+
     // 런타임에 선택된 캐릭터 (레벨 순)
     private CharacterData[] selectedCharacters;
 
