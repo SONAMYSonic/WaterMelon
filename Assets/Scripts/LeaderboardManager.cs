@@ -139,7 +139,7 @@ public class LeaderboardManager : MonoBehaviour
     {
         isFetching = true;
 
-        string url = RestBaseUrl + "/leaderboard?select=player_name,score,created_at&order=score.desc&limit=20";
+        string url = RestBaseUrl + "/leaderboard?select=player_name,score,created_at&order=score.desc&limit=150";
 
         using (var request = UnityWebRequest.Get(url))
         {

@@ -39,7 +39,7 @@ public class GameSetupWizard : EditorWindow
 
         GameObject container = new GameObject("Container");
         ContainerSetup setup = container.AddComponent<ContainerSetup>();
-        setup.width = 5.0f;
+        setup.width = 5f;
         setup.height = 7.5f;
         container.transform.position = Vector3.zero;
 

@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+#if UNITY_WEBGL && !UNITY_EDITOR
+    [System.Runtime.InteropServices.DllImport("__Internal")]
+    private static extern bool IsMobileBrowser();
+#endif
+
     public static GameManager Instance { get; private set; }
 
     [Header("References")]
@@ -35,9 +40,16 @@ public class GameManager : MonoBehaviour
     private int nextCharacterLevel;
     private bool canDrop = true;
 
+    // 컨테이너 경계 (합체 위치 보정용)
+    private float containerFloorY;
+    private float containerMinX;
+    private float containerMaxX;
+
     // Input System
     private Mouse mouse;
     private Touchscreen touchscreen;
+    private bool isMobile;
+    private bool hasActivePointer;
 
     // 이벤트
     public System.Action<int> OnScoreChanged;
@@ -65,6 +77,25 @@ public class GameManager : MonoBehaviour
         mouse = Mouse.current;
         touchscreen = Touchscreen.current;
 
+#if UNITY_WEBGL && !UNITY_EDITOR
+        try { isMobile = IsMobileBrowser(); }
+        catch { isMobile = false; }
+#else
+        isMobile = Application.isMobilePlatform;
+#endif
+
+        // 컨테이너 경계 캐싱 (합체 시 바닥/벽 뚫림 방지)
+        if (containerParent != null)
+        {
+            var container = containerParent.GetComponent<ContainerSetup>();
+            if (container != null)
+            {
+                containerFloorY = container.FloorY + containerParent.position.y;
+                containerMinX = container.LeftX + containerParent.position.x;
+                containerMaxX = container.RightX + containerParent.position.x;
+            }
+        }
+
         // 28명 중 랜덤 11명 선택
         characterDB.SelectRandomCharacters();
         OnCharactersSelected?.Invoke();
@@ -78,26 +109,70 @@ public class GameManager : MonoBehaviour
     {
         if (IsGameOver) return;
         if (IsPaused) return;
+
+        // 매 프레임 디바이스 갱신 (WebGL에서 첫 터치 후 활성화되는 케이스 대응)
+        mouse = Mouse.current;
+        touchscreen = Touchscreen.current;
+
         HandleInput();
         UpdateCurrentCharacterPosition();
     }
 
-    private Vector2 GetPointerScreenPosition()
+    private bool TryGetPointerScreenPosition(out Vector2 screenPos)
     {
+        // 터치스크린 직접 감지
         if (touchscreen != null && touchscreen.primaryTouch.press.isPressed)
-            return touchscreen.primaryTouch.position.ReadValue();
+        {
+            screenPos = touchscreen.primaryTouch.position.ReadValue();
+            return true;
+        }
+
+        // 마우스 (WebGL 모바일에서는 브라우저가 터치를 마우스 이벤트로 변환)
         if (mouse != null)
-            return mouse.position.ReadValue();
-        return Vector2.zero;
+        {
+            if (isMobile)
+            {
+                // 모바일: 터치(=마우스 버튼 누름) 중일 때만 유효
+                if (mouse.leftButton.isPressed)
+                {
+                    screenPos = mouse.position.ReadValue();
+                    return true;
+                }
+                screenPos = Vector2.zero;
+                return false;
+            }
+            else
+            {
+                // 데스크톱: 마우스 hover는 항상 유효
+                screenPos = mouse.position.ReadValue();
+                return true;
+            }
+        }
+
+        screenPos = Vector2.zero;
+        return false;
     }
 
-    private bool WasPointerPressedThisFrame()
+    private bool ShouldDropThisFrame()
     {
-        if (touchscreen != null && touchscreen.primaryTouch.press.wasPressedThisFrame)
-            return true;
-        if (mouse != null && mouse.leftButton.wasPressedThisFrame)
-            return true;
-        return false;
+        if (isMobile)
+        {
+            // 모바일: 터치를 떼면 드롭 (드래그로 위치 조정 → 릴리즈)
+            if (touchscreen != null && touchscreen.primaryTouch.press.wasReleasedThisFrame)
+                return true;
+            if (mouse != null && mouse.leftButton.wasReleasedThisFrame)
+                return true;
+            return false;
+        }
+        else
+        {
+            // 데스크톱: 클릭하면 드롭 (기존 동작)
+            if (touchscreen != null && touchscreen.primaryTouch.press.wasPressedThisFrame)
+                return true;
+            if (mouse != null && mouse.leftButton.wasPressedThisFrame)
+                return true;
+            return false;
+        }
     }
 
     private void HandleInput()
@@ -107,14 +182,20 @@ public class GameManager : MonoBehaviour
         // UI 위에 포인터가 있으면 게임 입력 무시
         if (IsPointerOverUI()) return;
 
-        Vector2 screenPos = GetPointerScreenPosition();
-        Vector3 worldPos = Camera.main.ScreenToWorldPoint(
-            new Vector3(screenPos.x, screenPos.y, 0f));
-        float clampedX = Mathf.Clamp(worldPos.x, dropMinX, dropMaxX);
-        dropPoint.position = new Vector3(clampedX, dropY, 0f);
+        bool hasPointer = TryGetPointerScreenPosition(out Vector2 screenPos);
 
-        if (WasPointerPressedThisFrame())
+        if (hasPointer)
         {
+            Vector3 worldPos = Camera.main.ScreenToWorldPoint(
+                new Vector3(screenPos.x, screenPos.y, 0f));
+            float clampedX = Mathf.Clamp(worldPos.x, dropMinX, dropMaxX);
+            dropPoint.position = new Vector3(clampedX, dropY, 0f);
+            hasActivePointer = true;
+        }
+
+        if (ShouldDropThisFrame() && hasActivePointer)
+        {
+            hasActivePointer = false;
             DropCharacter();
         }
     }
@@ -123,13 +204,16 @@ public class GameManager : MonoBehaviour
     {
         if (EventSystem.current == null) return false;
 
-        // 터치 입력
+        // 터치스크린 직접 감지
         if (touchscreen != null && touchscreen.primaryTouch.press.isPressed)
             return EventSystem.current.IsPointerOverGameObject(
                 touchscreen.primaryTouch.touchId.ReadValue());
 
-        // 마우스 입력
-        return EventSystem.current.IsPointerOverGameObject(-1);
+        // 마우스 (모바일에서는 버튼 누를 때만 체크)
+        if (mouse != null && (mouse.leftButton.isPressed || !isMobile))
+            return EventSystem.current.IsPointerOverGameObject(-1);
+
+        return false;
     }
 
     private void UpdateCurrentCharacterPosition()
@@ -215,6 +299,13 @@ public class GameManager : MonoBehaviour
         CharacterData newData = characterDB.GetCharacter(newLevel);
         CharacterData oldData = characterDB.GetCharacter(a.Level);
         Vector3 mergePos = (a.transform.position + b.transform.position) / 2f;
+
+        // 합체 위치 보정: 새 과일이 바닥/벽을 뚫지 않도록 클램프
+        float newRadius = characterDB.GetRadius(newLevel);
+        mergePos.y = Mathf.Max(mergePos.y, containerFloorY + newRadius + 0.05f);
+        mergePos.x = Mathf.Clamp(mergePos.x,
+            containerMinX + newRadius + 0.05f,
+            containerMaxX - newRadius - 0.05f);
 
         AddScore(characterDB.GetMergeScore(newLevel));
         SpawnMergeEffect(mergePos, newData, newLevel);

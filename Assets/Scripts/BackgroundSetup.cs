@@ -44,20 +44,24 @@ public class BackgroundSetup : MonoBehaviour
         ContainerSetup container = GetComponentInParent<ContainerSetup>();
         if (container != null)
         {
+            float containerWidth = container.width;
+            float containerHeight = container.height;
+
             if (backgroundSprite != null)
             {
                 // 스프라이트 크기를 컨테이너에 맞추기
                 float spriteW = backgroundSprite.bounds.size.x;
                 float spriteH = backgroundSprite.bounds.size.y;
                 transform.localScale = new Vector3(
-                    container.width / spriteW,
-                    container.height / spriteH,
+                    containerWidth / spriteW,
+                    containerHeight / spriteH,
                     1f);
             }
             else
             {
-                transform.localScale = new Vector3(container.width, container.height, 1f);
+                transform.localScale = new Vector3(containerWidth, containerHeight, 1f);
             }
+            // 배경 중심 = 컨테이너 중심 (local 0,0)
             transform.localPosition = Vector3.zero;
         }
     }

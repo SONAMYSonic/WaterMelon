@@ -36,6 +36,13 @@ public class Character : MonoBehaviour
             ? data.characterSprite.bounds.extents.x
             : 0.5f;
 
+        // 레벨별 질량 스케일링 (큰 과일일수록 무겁게)
+        if (rb != null)
+        {
+            float massScale = 1f + level * 0.3f;
+            rb.mass = massScale;
+        }
+
         gameObject.name = $"Character_Lv{level}_{data.characterName}";
     }
 
@@ -56,7 +63,7 @@ public class Character : MonoBehaviour
     }
 
     // 속도 제한 — 합체 충격 등으로 과일이 화면 밖으로 튕기는 것 방지
-    private const float MaxVelocity = 20f;
+    private const float MaxVelocity = 12f;
 
     private void FixedUpdate()
     {

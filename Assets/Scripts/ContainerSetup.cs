@@ -1,94 +1,28 @@
 using UnityEngine;
 
 /// <summary>
-/// 수박게임 컨테이너(바닥 + 좌우 벽)를 자동 생성한다.
-/// FHD 기준 중앙 배치.
+/// 수박게임 컨테이너 경계 정보.
+/// 벽(Floor, LeftWall, RightWall)은 씬에 직접 배치되어 있으며,
+/// 이 스크립트는 GameManager 등에서 경계를 읽을 수 있도록 프로퍼티만 제공한다.
 /// </summary>
-[ExecuteInEditMode]
 public class ContainerSetup : MonoBehaviour
 {
-    [Header("Container Dimensions (World Units)")]
-    public float width = 5.0f;
+    [Header("Container Size")]
+    [Tooltip("컨테이너 내부 폭")]
+    public float width = 5f;
+    [Tooltip("컨테이너 내부 높이")]
     public float height = 7.5f;
-    public float wallThickness = 0.2f;
 
-    [Header("Appearance")]
-    public Color wallColor = new Color(0.3f, 0.2f, 0.1f, 1f);
-    public int sortingOrder = -1;
-
-    private void Awake()
-    {
-        RebuildWalls();
-    }
-
-    private void RebuildWalls()
-    {
-        // 기존 벽 제거 (중복 방지)
-        for (int i = transform.childCount - 1; i >= 0; i--)
-        {
-            var child = transform.GetChild(i);
-            if (child.name == "Floor" || child.name == "LeftWall" || child.name == "RightWall")
-            {
-                if (Application.isPlaying)
-                    Destroy(child.gameObject);
-                else
-                    DestroyImmediate(child.gameObject);
-            }
-        }
-
-        CreateWall("Floor", new Vector3(0, -height / 2f, 0),
-            new Vector2(width + wallThickness * 2, wallThickness));
-        CreateWall("LeftWall", new Vector3(-width / 2f - wallThickness / 2f, 0, 0),
-            new Vector2(wallThickness, height + wallThickness));
-        CreateWall("RightWall", new Vector3(width / 2f + wallThickness / 2f, 0, 0),
-            new Vector2(wallThickness, height + wallThickness));
-    }
-
-    private void CreateWall(string wallName, Vector3 localPos, Vector2 size)
-    {
-        GameObject wall = new GameObject(wallName);
-        wall.transform.SetParent(transform);
-        wall.transform.localPosition = localPos;
-
-        BoxCollider2D col = wall.AddComponent<BoxCollider2D>();
-        col.size = size;
-
-        SpriteRenderer sr = wall.AddComponent<SpriteRenderer>();
-        sr.sprite = CreateSquareSprite();
-        sr.color = wallColor;
-        sr.sortingOrder = sortingOrder;
-        wall.transform.localScale = new Vector3(size.x, size.y, 1f);
-    }
-
-    private Sprite CreateSquareSprite()
-    {
-        Texture2D tex = new Texture2D(4, 4);
-        Color[] colors = new Color[16];
-        for (int i = 0; i < 16; i++) colors[i] = Color.white;
-        tex.SetPixels(colors);
-        tex.Apply();
-        return Sprite.Create(tex, new Rect(0, 0, 4, 4), new Vector2(0.5f, 0.5f), 4f);
-    }
+    // 외부에서 컨테이너 경계를 읽을 수 있게 프로퍼티 제공
+    public float FloorY => -height / 2f;
+    public float LeftX => -width / 2f;
+    public float RightX => width / 2f;
 
     private void OnDrawGizmos()
     {
         Vector3 pos = transform.position;
-        float hw = width / 2f;
-        float hh = height / 2f;
-        float wt = wallThickness;
-
-        // 배경 영역
-        Gizmos.color = new Color(0.98f, 0.95f, 0.88f, 0.3f);
-        Gizmos.DrawCube(pos, new Vector3(width, height, 0));
-
-        // 벽
-        Gizmos.color = wallColor;
-        // Floor
-        Gizmos.DrawCube(pos + new Vector3(0, -hh, 0), new Vector3(width + wt * 2, wt, 0.1f));
-        // Left
-        Gizmos.DrawCube(pos + new Vector3(-hw - wt / 2f, 0, 0), new Vector3(wt, height + wt, 0.1f));
-        // Right
-        Gizmos.DrawCube(pos + new Vector3(hw + wt / 2f, 0, 0), new Vector3(wt, height + wt, 0.1f));
+        float halfW = width / 2f;
+        float halfH = height / 2f;
 
         // 윤곽선
         Gizmos.color = Color.yellow;
