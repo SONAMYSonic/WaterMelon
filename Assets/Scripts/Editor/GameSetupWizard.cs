@@ -21,11 +21,6 @@ public class GameSetupWizard : EditorWindow
         CreateGameManager();
         CreateCanvas();
 
-        Debug.Log("[수박게임] 씬 세팅 완료!  다음 단계:");
-        Debug.Log("  1) WatermelonGame > Create Sample Character Data");
-        Debug.Log("  2) WatermelonGame > Generate Placeholder Sprites");
-        Debug.Log("  3) WatermelonGame > Auto-Link References");
-        Debug.Log("  (또는 직접 캐릭터 스프라이트를 할당)");
     }
 
     private static void SetupCamera()
@@ -132,7 +127,6 @@ public class GameSetupWizard : EditorWindow
 
         PrefabUtility.SaveAsPrefabAsset(charObj, prefabPath);
         Object.DestroyImmediate(charObj);
-        Debug.Log("[수박게임] Character 프리팹 생성 완료");
     }
 
     private static PhysicsMaterial2D CreateBounceMaterial()
@@ -203,7 +197,6 @@ public class GameSetupWizard : EditorWindow
         // MergeEffect 연결 (Serialized Field는 프리팹 저장 후 수동 연결 필요)
         PrefabUtility.SaveAsPrefabAsset(fxObj, prefabPath);
         Object.DestroyImmediate(fxObj);
-        Debug.Log("[수박게임] MergeEffect 프리팹 생성 완료");
     }
 
     private static void CreateAudioManager()
@@ -376,7 +369,6 @@ public class GameSetupWizard : EditorWindow
         CreateEvolutionEntryPrefab();
 
         Undo.RegisterCreatedObjectUndo(canvasObj, "Create GameCanvas");
-        Debug.Log("[수박게임] UI Canvas 생성 완료. Inspector에서 UIManager 필드를 연결하세요.");
     }
 
     private static void CreateEvolutionEntryPrefab()
@@ -417,7 +409,6 @@ public class GameSetupWizard : EditorWindow
 
         PrefabUtility.SaveAsPrefabAsset(entry, prefabPath);
         Object.DestroyImmediate(entry);
-        Debug.Log("[수박게임] EvolutionEntry 프리팹 생성 완료");
     }
 
     private static GameObject CreatePanel(Transform parent, string name,
@@ -527,8 +518,6 @@ public class GameSetupWizard : EditorWindow
         EditorUtility.SetDirty(db);
         AssetDatabase.SaveAssets();
 
-        Debug.Log($"[수박게임] {names.Length}개 캐릭터 데이터 + Database 생성 완료!");
-        Debug.Log("[수박게임] 각 CharacterData 에셋에 스프라이트, 효과음, 보이스를 할당하세요.");
     }
 
     // ===== 자동 연결 유틸 =====
@@ -562,7 +551,6 @@ public class GameSetupWizard : EditorWindow
             if (fxPrefab != null) so.FindProperty("mergeEffectPrefab").objectReferenceValue = fxPrefab;
 
             so.ApplyModifiedProperties();
-            Debug.Log("[수박게임] GameManager 레퍼런스 연결 완료");
         }
 
         // UIManager 연결
@@ -625,7 +613,6 @@ public class GameSetupWizard : EditorWindow
                     restartBtn.GetComponent<Button>();
 
             so.ApplyModifiedProperties();
-            Debug.Log("[수박게임] UIManager 레퍼런스 연결 완료");
         }
 
         // AudioManager 연결
@@ -650,7 +637,6 @@ public class GameSetupWizard : EditorWindow
                     bgm.GetComponent<AudioSource>();
 
             so.ApplyModifiedProperties();
-            Debug.Log("[수박게임] AudioManager 레퍼런스 연결 완료");
         }
 
         // MergeEffect 프리팹 내부 연결
@@ -676,10 +662,8 @@ public class GameSetupWizard : EditorWindow
                 meSO.ApplyModifiedProperties();
                 EditorUtility.SetDirty(fxPrefabObj);
                 AssetDatabase.SaveAssets();
-                Debug.Log("[수박게임] MergeEffect 프리팹 내부 연결 완료");
             }
         }
 
-        Debug.Log("[수박게임] 전체 Auto-Link 완료!");
     }
 }

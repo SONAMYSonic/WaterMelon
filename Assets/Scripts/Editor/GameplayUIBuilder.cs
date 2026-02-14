@@ -10,7 +10,6 @@ public class GameplayUIBuilder : EditorWindow
     {
         BuildUI();
         ApplyAssetChanges();
-        Debug.Log("[GameplayUIBuilder] === 모든 작업 완료! ===");
     }
 
     static void BuildUI()
@@ -19,7 +18,6 @@ public class GameplayUIBuilder : EditorWindow
         var canvas = GameObject.Find("GameCanvas");
         if (canvas == null)
         {
-            Debug.LogError("[GameplayUIBuilder] GameCanvas를 찾을 수 없습니다!");
             return;
         }
         var canvasT = canvas.transform;
@@ -114,14 +112,7 @@ public class GameplayUIBuilder : EditorWindow
                 confirmRefreshPanel.transform.Find("ButtonRow/NoBtn")?.gameObject);
 
             so.ApplyModifiedProperties();
-            Debug.Log("[GameplayUIBuilder] UIManager 참조 연결 완료");
         }
-        else
-        {
-            Debug.LogWarning("[GameplayUIBuilder] UIManager를 찾을 수 없습니다!");
-        }
-
-        Debug.Log("[GameplayUIBuilder] UI 빌드 완료");
     }
 
     static void ApplyAssetChanges()
@@ -146,17 +137,8 @@ public class GameplayUIBuilder : EditorWindow
                     maxProp.floatValue = 1.96f;
                     dbSO.ApplyModifiedProperties();
                     EditorUtility.SetDirty(db);
-                    Debug.Log($"[GameplayUIBuilder] CharacterDatabase: minRadius {oldMin}→0.35, maxRadius {oldMax}→1.96");
-                }
-                else
-                {
-                    Debug.LogWarning("[GameplayUIBuilder] CharacterDatabase에서 minRadius/maxRadius 프로퍼티를 찾을 수 없습니다.");
                 }
             }
-        }
-        else
-        {
-            Debug.LogWarning("[GameplayUIBuilder] CharacterDatabase 에셋을 찾을 수 없습니다.");
         }
 
         // === B. CharacterPhysics.physicsMaterial2D — bounciness 0.1 ===
@@ -167,11 +149,6 @@ public class GameplayUIBuilder : EditorWindow
             float oldBounce = physMat.bounciness;
             physMat.bounciness = 0.1f;
             EditorUtility.SetDirty(physMat);
-            Debug.Log($"[GameplayUIBuilder] PhysicsMaterial2D: bounciness {oldBounce}→0.1");
-        }
-        else
-        {
-            Debug.LogWarning("[GameplayUIBuilder] CharacterPhysics.physicsMaterial2D를 찾을 수 없습니다.");
         }
 
         // === C. GameManager — dropMinX, dropMaxX 조정 ===
@@ -190,14 +167,8 @@ public class GameplayUIBuilder : EditorWindow
                 maxXProp.floatValue = 2.0f;
                 gmSO.ApplyModifiedProperties();
                 EditorUtility.SetDirty(gm);
-                Debug.Log($"[GameplayUIBuilder] GameManager: dropMinX {oldMinX}→-2.0, dropMaxX {oldMaxX}→2.0");
             }
         }
-        else
-        {
-            Debug.LogWarning("[GameplayUIBuilder] GameManager를 찾을 수 없습니다.");
-        }
-
         AssetDatabase.SaveAssets();
     }
 
@@ -285,16 +256,10 @@ public class GameplayUIBuilder : EditorWindow
     // ===== 공통 헬퍼 =====
     static void SetRef(SerializedObject so, string propName, Object target)
     {
-        if (target == null)
-        {
-            Debug.LogWarning($"[GameplayUIBuilder] '{propName}' 대상이 null입니다.");
-            return;
-        }
+        if (target == null) return;
         var prop = so.FindProperty(propName);
         if (prop != null)
             prop.objectReferenceValue = target;
-        else
-            Debug.LogWarning($"[GameplayUIBuilder] SerializedProperty '{propName}'를 찾을 수 없습니다.");
     }
 
     static GameObject CreateButton(Transform parent, string name, string label)

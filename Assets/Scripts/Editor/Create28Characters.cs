@@ -73,7 +73,5 @@ public static class Create28Characters
         db.scorePerLevel = 10;
         EditorUtility.SetDirty(db);
         AssetDatabase.SaveAssets();
-
-        Debug.Log($"28 CharacterData assets created/updated. CharacterDatabase.allCharacters linked.");
     }
 }

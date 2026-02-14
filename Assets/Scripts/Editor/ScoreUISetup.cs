@@ -9,7 +9,7 @@ public static class ScoreUISetup
     {
         // LeftScorePanel 찾기
         var panel = GameObject.Find("GameCanvas/LeftScorePanel");
-        if (panel == null) { Debug.LogError("LeftScorePanel not found!"); return; }
+        if (panel == null) return;
 
         var panelRT = panel.GetComponent<RectTransform>();
 
@@ -79,12 +79,10 @@ public static class ScoreUISetup
                     highProp.objectReferenceValue = bestValObj.GetComponent<TextMeshProUGUI>();
                 
                 so.ApplyModifiedProperties();
-                Debug.Log("UIManager score references updated.");
             }
         }
 
         EditorUtility.SetDirty(panel);
-        Debug.Log("Score UI setup complete: ScoreTxt, ScoreValue, BestTxt, BestValue");
     }
 
     private static GameObject CreateTMPObject(string name, Transform parent)

@@ -53,6 +53,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Button leaderboardRefreshButton;
     [SerializeField] private Transform leaderboardContent;
     [SerializeField] private TextMeshProUGUI cooldownText;
+    [SerializeField] private GameObject leaderboardRowPrefab;
 
     [Header("인게임 재시작")]
     [SerializeField] private Button inGameRestartButton;
@@ -131,7 +132,11 @@ public class UIManager : MonoBehaviour
             leaderboardCloseButton.onClick.AddListener(CloseLeaderboard);
 
         if (leaderboardRefreshButton != null)
-            leaderboardRefreshButton.onClick.AddListener(RefreshLeaderboard);
+            leaderboardRefreshButton.onClick.AddListener(() =>
+            {
+                PlayUIClick();
+                RefreshLeaderboard();
+            });
 
         // 닉네임 관련 버튼 연결
         if (submitScoreButton != null)
@@ -390,7 +395,6 @@ public class UIManager : MonoBehaviour
 
     private void RefreshLeaderboard()
     {
-        PlayUIClick();
         if (LeaderboardManager.Instance == null) return;
 
         if (!LeaderboardManager.Instance.CanFetch)
@@ -422,58 +426,27 @@ public class UIManager : MonoBehaviour
 
         if (entries == null || entries.Count == 0)
         {
-            CreateLeaderboardRow(leaderboardContent, "-", "데이터 없음", "");
+            CreateLeaderboardRow(leaderboardContent, 0, "데이터 없음", "");
             return;
         }
 
         for (int i = 0; i < entries.Count; i++)
         {
-            string rank = (i + 1).ToString();
             string playerName = entries[i].player_name;
             string score = entries[i].score.ToString("N0");
-            CreateLeaderboardRow(leaderboardContent, rank, playerName, score);
+            CreateLeaderboardRow(leaderboardContent, i + 1, playerName, score);
         }
     }
 
-    private void CreateLeaderboardRow(Transform parent, string rank, string playerName, string score)
+    private void CreateLeaderboardRow(Transform parent, int rank, string playerName, string score)
     {
-        var rowGo = new GameObject("LBRow", typeof(RectTransform), typeof(HorizontalLayoutGroup));
-        rowGo.transform.SetParent(parent, false);
+        if (leaderboardRowPrefab == null) return;
 
-        var hlg = rowGo.GetComponent<HorizontalLayoutGroup>();
-        hlg.spacing = 10;
-        hlg.childAlignment = TextAnchor.MiddleCenter;
-        hlg.padding = new RectOffset(10, 10, 2, 2);
-        hlg.childControlWidth = true;
-        hlg.childControlHeight = true;
-        hlg.childForceExpandWidth = false;
-        hlg.childForceExpandHeight = false;
-
-        var rowLE = rowGo.AddComponent<LayoutElement>();
-        rowLE.preferredHeight = 36;
-
-        // 순위
-        CreateLBCell(rowGo.transform, rank, 60, TextAlignmentOptions.Center);
-        // 이름
-        CreateLBCell(rowGo.transform, playerName, 220, TextAlignmentOptions.Left);
-        // 점수
-        CreateLBCell(rowGo.transform, score, 140, TextAlignmentOptions.Right);
-    }
-
-    private void CreateLBCell(Transform parent, string text, float width, TextAlignmentOptions align)
-    {
-        var cellGo = new GameObject("Cell", typeof(RectTransform), typeof(TextMeshProUGUI));
-        cellGo.transform.SetParent(parent, false);
-
-        var le = cellGo.AddComponent<LayoutElement>();
-        le.preferredWidth = width;
-        le.flexibleWidth = 0;
-
-        var tmp = cellGo.GetComponent<TextMeshProUGUI>();
-        tmp.text = text;
-        tmp.fontSize = 20;
-        tmp.color = Color.white;
-        tmp.alignment = align;
+        var rowGo = Instantiate(leaderboardRowPrefab, parent);
+        rowGo.name = "LBRow";
+        var lbRow = rowGo.GetComponent<LeaderboardRow>();
+        if (lbRow != null)
+            lbRow.Setup(rank, playerName, score);
     }
 
     private void StartCooldownTimer()

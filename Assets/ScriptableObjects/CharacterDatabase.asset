@@ -43,6 +43,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8e053a20bef76c94f8d39cb1303c0231, type: 2}
   levelCount: 11
   minRadius: 0.35
-  maxRadius: 1.96
+  maxRadius: 1.7
   baseScore: 10
   scorePerLevel: 10

@@ -71,9 +71,6 @@ public static class CreateCircleTexture
 
             AssetDatabase.CreateAsset(mat, matPath);
             AssetDatabase.SaveAssets();
-            Debug.Log($"파티클 머티리얼 생성 완료: {matPath}");
         }
-
-        Debug.Log($"원형 파티클 텍스처 생성 완료: {path}");
     }
 }

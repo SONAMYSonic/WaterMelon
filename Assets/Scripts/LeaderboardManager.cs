@@ -71,7 +71,6 @@ public class LeaderboardManager : MonoBehaviour
         var configAsset = Resources.Load<TextAsset>("SupabaseConfig");
         if (configAsset == null)
         {
-            Debug.LogError("[Leaderboard] SupabaseConfig.json not found in Resources! Leaderboard disabled.");
             return;
         }
         var config = JsonUtility.FromJson<SupabaseConfig>(configAsset.text);
@@ -131,9 +130,6 @@ public class LeaderboardManager : MonoBehaviour
             yield return request.SendWebRequest();
 
             bool success = request.result == UnityWebRequest.Result.Success;
-            if (!success)
-                Debug.LogWarning($"[Leaderboard] Submit failed: {request.error} | {request.downloadHandler.text}");
-
             isSubmitting = false;
             onComplete?.Invoke(success);
         }
@@ -161,14 +157,12 @@ public class LeaderboardManager : MonoBehaviour
                     var parsed = JsonUtility.FromJson<LeaderboardEntryList>(wrapped);
                     cachedEntries = new List<LeaderboardEntry>(parsed.items ?? new LeaderboardEntry[0]);
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
-                    Debug.LogWarning($"[Leaderboard] Parse error: {e.Message}");
                 }
             }
             else
             {
-                Debug.LogWarning($"[Leaderboard] Fetch failed: {request.error}");
             }
 
             lastFetchTime = Time.unscaledTime;

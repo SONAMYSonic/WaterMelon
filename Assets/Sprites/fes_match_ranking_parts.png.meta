@@ -216,11 +216,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 743
-        width: 880
-        height: 137
+        y: 744
+        width: 879
+        height: 136
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -238,11 +238,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 618
-        width: 864
-        height: 125
+        y: 619
+        width: 863
+        height: 123
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -260,11 +260,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 70
-        width: 29
-        height: 548
+        y: 71
+        width: 28
+        height: 546
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -281,12 +281,12 @@ TextureImporter:
       name: fes_match_ranking_parts_3
       rect:
         serializedVersion: 2
-        x: 30
-        y: 495
-        width: 200
-        height: 123
+        x: 31
+        y: 496
+        width: 198
+        height: 121
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -303,12 +303,12 @@ TextureImporter:
       name: fes_match_ranking_parts_4
       rect:
         serializedVersion: 2
-        x: 230
-        y: 594
-        width: 347
-        height: 24
+        x: 231
+        y: 595
+        width: 345
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -325,12 +325,12 @@ TextureImporter:
       name: fes_match_ranking_parts_5
       rect:
         serializedVersion: 2
-        x: 230
-        y: 472
-        width: 200
-        height: 122
+        x: 579
+        y: 497
+        width: 198
+        height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -347,12 +347,12 @@ TextureImporter:
       name: fes_match_ranking_parts_6
       rect:
         serializedVersion: 2
-        x: 429
-        y: 545
-        width: 105
-        height: 49
+        x: 779
+        y: 571
+        width: 94
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -369,12 +369,12 @@ TextureImporter:
       name: fes_match_ranking_parts_7
       rect:
         serializedVersion: 2
-        x: 578
-        y: 496
-        width: 200
-        height: 122
+        x: 231
+        y: 473
+        width: 198
+        height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -391,12 +391,12 @@ TextureImporter:
       name: fes_match_ranking_parts_8
       rect:
         serializedVersion: 2
-        x: 778
-        y: 570
-        width: 96
-        height: 48
+        x: 430
+        y: 546
+        width: 103
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -413,12 +413,12 @@ TextureImporter:
       name: fes_match_ranking_parts_9
       rect:
         serializedVersion: 2
-        x: 430
-        y: 498
-        width: 104
-        height: 48
+        x: 779
+        y: 521
+        width: 94
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -435,12 +435,12 @@ TextureImporter:
       name: fes_match_ranking_parts_10
       rect:
         serializedVersion: 2
-        x: 778
-        y: 520
-        width: 96
-        height: 48
+        x: 431
+        y: 499
+        width: 102
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -457,12 +457,12 @@ TextureImporter:
       name: fes_match_ranking_parts_11
       rect:
         serializedVersion: 2
-        x: 30
-        y: 374
-        width: 194
-        height: 122
+        x: 779
+        y: 469
+        width: 94
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -479,12 +479,12 @@ TextureImporter:
       name: fes_match_ranking_parts_12
       rect:
         serializedVersion: 2
-        x: 224
-        y: 350
-        width: 194
-        height: 122
+        x: 31
+        y: 375
+        width: 192
+        height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -501,12 +501,12 @@ TextureImporter:
       name: fes_match_ranking_parts_13
       rect:
         serializedVersion: 2
-        x: 429
-        y: 449
-        width: 104
-        height: 49
+        x: 225
+        y: 351
+        width: 192
+        height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -523,12 +523,12 @@ TextureImporter:
       name: fes_match_ranking_parts_14
       rect:
         serializedVersion: 2
-        x: 533
-        y: 421
-        width: 152
-        height: 75
+        x: 430
+        y: 450
+        width: 102
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -545,12 +545,12 @@ TextureImporter:
       name: fes_match_ranking_parts_15
       rect:
         serializedVersion: 2
-        x: 686
-        y: 468
-        width: 83
-        height: 28
+        x: 534
+        y: 422
+        width: 150
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -567,12 +567,12 @@ TextureImporter:
       name: fes_match_ranking_parts_16
       rect:
         serializedVersion: 2
-        x: 686
-        y: 394
-        width: 151
-        height: 74
+        x: 687
+        y: 469
+        width: 81
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -589,12 +589,12 @@ TextureImporter:
       name: fes_match_ranking_parts_17
       rect:
         serializedVersion: 2
-        x: 778
-        y: 468
-        width: 96
-        height: 50
+        x: 419
+        y: 403
+        width: 94
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -611,12 +611,12 @@ TextureImporter:
       name: fes_match_ranking_parts_18
       rect:
         serializedVersion: 2
-        x: 418
-        y: 402
-        width: 96
-        height: 48
+        x: 516
+        y: 348
+        width: 150
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -633,12 +633,12 @@ TextureImporter:
       name: fes_match_ranking_parts_19
       rect:
         serializedVersion: 2
-        x: 515
-        y: 347
-        width: 152
-        height: 75
+        x: 687
+        y: 395
+        width: 149
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -655,12 +655,12 @@ TextureImporter:
       name: fes_match_ranking_parts_20
       rect:
         serializedVersion: 2
-        x: 99
-        y: 326
-        width: 103
-        height: 48
+        x: 100
+        y: 327
+        width: 101
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -677,12 +677,12 @@ TextureImporter:
       name: fes_match_ranking_parts_21
       rect:
         serializedVersion: 2
-        x: 202
-        y: 275
-        width: 152
-        height: 75
+        x: 419
+        y: 351
+        width: 94
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -699,12 +699,12 @@ TextureImporter:
       name: fes_match_ranking_parts_22
       rect:
         serializedVersion: 2
-        x: 355
-        y: 276
-        width: 151
-        height: 74
+        x: 669
+        y: 321
+        width: 149
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -721,12 +721,12 @@ TextureImporter:
       name: fes_match_ranking_parts_23
       rect:
         serializedVersion: 2
-        x: 418
-        y: 350
-        width: 96
-        height: 50
+        x: 100
+        y: 277
+        width: 94
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -743,12 +743,12 @@ TextureImporter:
       name: fes_match_ranking_parts_24
       rect:
         serializedVersion: 2
-        x: 668
-        y: 320
-        width: 151
-        height: 74
+        x: 203
+        y: 276
+        width: 150
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -765,12 +765,12 @@ TextureImporter:
       name: fes_match_ranking_parts_25
       rect:
         serializedVersion: 2
-        x: 99
-        y: 276
-        width: 96
-        height: 50
+        x: 356
+        y: 277
+        width: 149
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -787,12 +787,12 @@ TextureImporter:
       name: fes_match_ranking_parts_26
       rect:
         serializedVersion: 2
-        x: 507
-        y: 299
-        width: 97
-        height: 49
+        x: 508
+        y: 300
+        width: 95
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -809,12 +809,12 @@ TextureImporter:
       name: fes_match_ranking_parts_27
       rect:
         serializedVersion: 2
-        x: 30
-        y: 227
-        width: 96
-        height: 49
+        x: 31
+        y: 228
+        width: 94
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -831,12 +831,12 @@ TextureImporter:
       name: fes_match_ranking_parts_28
       rect:
         serializedVersion: 2
-        x: 30
-        y: 178
-        width: 96
-        height: 49
+        x: 127
+        y: 228
+        width: 94
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -853,12 +853,12 @@ TextureImporter:
       name: fes_match_ranking_parts_29
       rect:
         serializedVersion: 2
-        x: 126
-        y: 227
-        width: 96
-        height: 49
+        x: 31
+        y: 179
+        width: 94
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -875,12 +875,12 @@ TextureImporter:
       name: fes_match_ranking_parts_30
       rect:
         serializedVersion: 2
-        x: 30
-        y: 129
-        width: 96
-        height: 49
+        x: 31
+        y: 130
+        width: 94
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -897,12 +897,12 @@ TextureImporter:
       name: fes_match_ranking_parts_31
       rect:
         serializedVersion: 2
-        x: 30
-        y: 80
-        width: 96
-        height: 49
+        x: 31
+        y: 81
+        width: 94
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -919,12 +919,12 @@ TextureImporter:
       name: fes_match_ranking_parts_32
       rect:
         serializedVersion: 2
-        x: 1
-        y: 20
-        width: 96
-        height: 50
+        x: 2
+        y: 21
+        width: 94
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -941,12 +941,12 @@ TextureImporter:
       name: fes_match_ranking_parts_33
       rect:
         serializedVersion: 2
-        x: 99
-        y: 31
-        width: 96
-        height: 49
+        x: 100
+        y: 32
+        width: 94
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -963,7 +963,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7035095f45fe694439586301e53a8055
     internalID: 0
     vertices: []
     indices: 
@@ -971,7 +971,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       fes_match_ranking_parts_0: 8132049607167749973
       fes_match_ranking_parts_1: -5779386469297718189

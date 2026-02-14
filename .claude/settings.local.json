@@ -12,7 +12,8 @@
       "mcp__unityMCP__manage_texture",
       "Bash(find:*)",
       "mcp__unityMCP__manage_gameobject",
-      "mcp__unityMCP__manage_components"
+      "mcp__unityMCP__manage_components",
+      "mcp__unityMCP__manage_prefabs"
     ]
   }
 }

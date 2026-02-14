@@ -15,18 +15,12 @@ public class LeaderboardUIBuilder : EditorWindow
             var lmGo = new GameObject("LeaderboardManager");
             lmGo.AddComponent<LeaderboardManager>();
             Undo.RegisterCreatedObjectUndo(lmGo, "Create LeaderboardManager");
-            Debug.Log("[LeaderboardUIBuilder] LeaderboardManager 오브젝트 생성 완료");
-        }
-        else
-        {
-            Debug.Log("[LeaderboardUIBuilder] LeaderboardManager 이미 존재");
         }
 
         // === 2. GameCanvas 찾기 ===
         var canvas = GameObject.Find("GameCanvas");
         if (canvas == null)
         {
-            Debug.LogError("[LeaderboardUIBuilder] GameCanvas를 찾을 수 없습니다!");
             return;
         }
         var canvasTransform = canvas.transform;
@@ -232,11 +226,6 @@ public class LeaderboardUIBuilder : EditorWindow
                 restartRT.anchoredPosition = new Vector2(0f, -320f);
             }
 
-            Debug.Log("[LeaderboardUIBuilder] GameOverPanel 닉네임 UI 추가 완료");
-        }
-        else
-        {
-            Debug.LogWarning("[LeaderboardUIBuilder] GameOverPanel을 찾을 수 없습니다!");
         }
 
         // === 6. UIManager에 참조 연결 ===
@@ -270,11 +259,6 @@ public class LeaderboardUIBuilder : EditorWindow
             }
 
             so.ApplyModifiedProperties();
-            Debug.Log("[LeaderboardUIBuilder] UIManager 참조 연결 완료");
-        }
-        else
-        {
-            Debug.LogWarning("[LeaderboardUIBuilder] UIManager를 찾을 수 없습니다!");
         }
 
         // === 7. 패널 렌더 순서 조정 ===
@@ -282,23 +266,16 @@ public class LeaderboardUIBuilder : EditorWindow
         if (goPanel != null) goPanel.SetAsLastSibling();
         lbPanel.transform.SetAsLastSibling();
 
-        Debug.Log("[LeaderboardUIBuilder] === 리더보드 UI 빌드 완료! ===");
     }
 
     // ===== 헬퍼 메서드 =====
 
     static void SetRef(SerializedObject so, string propName, Object target)
     {
-        if (target == null)
-        {
-            Debug.LogWarning($"[LeaderboardUIBuilder] '{propName}' 대상이 null입니다.");
-            return;
-        }
+        if (target == null) return;
         var prop = so.FindProperty(propName);
         if (prop != null)
             prop.objectReferenceValue = target;
-        else
-            Debug.LogWarning($"[LeaderboardUIBuilder] SerializedProperty '{propName}'를 찾을 수 없습니다.");
     }
 
     static GameObject CreateButton(Transform parent, string name, string label)

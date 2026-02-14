@@ -56,7 +56,6 @@ public class PlaceholderSpriteGenerator : EditorWindow
         }
 
         AssetDatabase.SaveAssets();
-        Debug.Log("[수박게임] 플레이스홀더 스프라이트 생성 + 할당 완료!");
     }
 
     private static Texture2D CreateCircleTexture(int size, Color color)
